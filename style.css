@@ -1,0 +1,46 @@
+main,
+div.main {
+    overflow: hidden;
+}
+
+nav {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2rem;
+    background: #0e2049bb;
+    border-radius: 50px;
+    border: 2px solid #2a3d69;
+    z-index: 1;
+}
+
+.pageContainer {
+    transition: .3s all ease;
+}
+
+.navEl {
+    border: 2px solid #0e2049bb;
+    margin: .5rem;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: .3s all;
+}
+
+.navEl.active {
+    background: #2a3d69;
+    transform: rotate(360deg);
+}
+
+.navEl:hover {
+    transform: scale(1.1) rotate(360deg);
+}
+
+.navEl>img {
+    height: 25px;
+    width: 25px;
+    filter: invert(55%) sepia(0%) saturate(600%) hue-rotate( 243deg) brightness(64%) contrast(66%);
+}
+
+.navEl.active>img {
+    filter: invert(85%) sepia(0%) saturate(991%) hue-rotate( 243deg) brightness(74%) contrast(76%);
+}

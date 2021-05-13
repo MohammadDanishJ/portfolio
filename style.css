@@ -1,15 +1,23 @@
+* {
+    user-select: none;
+}
+
 main,
 div.main {
     overflow: hidden;
 }
 
+.main {
+    padding: 2rem 4rem;
+}
+
 nav {
-    top: 50%;
-    transform: translateY(-50%);
-    right: 2rem;
+    top: 1rem;
+    transform: translateX(-50%);
+    left: 50%;
     background: #0e2049bb;
     border-radius: 50px;
-    border: 2px solid #2a3d69;
+    border: 2px solid #2a3d69bb;
     z-index: 1;
 }
 
@@ -18,17 +26,16 @@ nav {
 }
 
 .navEl {
-    border: 2px solid #0e2049bb;
-    margin: .5rem;
+    padding: 1rem;
     width: 45px;
     height: 45px;
-    border-radius: 50%;
     transition: .3s all;
 }
 
 .navEl.active {
     background: #2a3d69;
     transform: rotate(360deg);
+    border-radius: 50%;
 }
 
 .navEl:hover {
@@ -36,11 +43,74 @@ nav {
 }
 
 .navEl>img {
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     filter: invert(55%) sepia(0%) saturate(600%) hue-rotate( 243deg) brightness(64%) contrast(66%);
 }
 
 .navEl.active>img {
     filter: invert(85%) sepia(0%) saturate(991%) hue-rotate( 243deg) brightness(74%) contrast(76%);
+}
+
+.intro {
+    border-left: 2px solid #f0f0f0;
+    margin: 1rem;
+    padding: .5rem 1rem;
+    align-items: flex-start !important;
+}
+
+.headline {
+    font-size: 4rem;
+    font-weight: 600;
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 1rem;
+}
+
+.subline {
+    font-size: .8rem;
+}
+
+.blob {
+    width: 400px;
+    height: 400px;
+    background: url(assets/images/img/my.jpg);
+    background-size: cover;
+    background-position: center;
+    animation: blob 10s linear infinite;
+}
+
+.blob:after {
+    position: absolute;
+    content: '';
+    height: 400px;
+    width: 400px;
+    background: linear-gradient(64.009163468deg, #f34868, #f24768, #9e00ec);
+    opacity: .2;
+    animation: blob 10s linear infinite;
+}
+
+@keyframes blob {
+    0%,
+    100% {
+        border-radius: 64% 36% 27% 73% / 55% 58% 42% 45%;
+    }
+    25% {
+        border-radius: 73% 17% 46% 38% / 73% 36% 64% 27%;
+    }
+    50% {
+        border-radius: 28% 72% 44% 56% / 49% 40% 70% 51%;
+    }
+    75% {
+        border-radius: 40% 60% 70% 30% / 47% 62% 38% 53%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 1rem;
+        flex-direction: column-reverse;
+    }
+    .headline {
+        font-size: 2rem;
+    }
 }

@@ -6,19 +6,26 @@ main,
 div.main {
     overflow: hidden;
 }
-
+::-webkit-scrollbar-thumb{
+    display: none;
+}
 .main {
     padding: 2rem 4rem;
 }
 
+main{
+    
+    background: linear-gradient(45deg, rgb(0,14,42), rgb(41,0,29));
+}
 nav {
-    top: 1rem;
+    bottom: 1rem;
     transform: translateX(-50%);
     left: 50%;
     background: #0e2049bb;
     border-radius: 50px;
     border: 2px solid #2a3d69bb;
     z-index: 1;
+    padding: 0 1rem 0 1rem;
 }
 
 .pageContainer {
@@ -26,16 +33,29 @@ nav {
 }
 
 .navEl {
+    margin: .5rem .5rem .5rem 1rem;
     padding: 1rem;
     width: 45px;
     height: 45px;
     transition: .3s all;
+    z-index: 1;
 }
-
+.navEl+span{
+    display: none;
+    transition: 5s all ease-in;
+    left: -50px;;
+    z-index: 0;
+    position: relative;
+}
 .navEl.active {
     background: #2a3d69;
     transform: rotate(360deg);
     border-radius: 50%;
+}
+.navEl.active+span{
+    display: flex;
+    left: 0;
+    transition: 5s all ease-in;
 }
 
 .navEl:hover {

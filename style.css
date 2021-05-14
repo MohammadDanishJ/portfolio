@@ -18,17 +18,9 @@ nav,
 }
 nav {
   top: 0;
-  /* transform: translateX(-50%); */
   right: 0;
-  /* background: #0e2049bb; */
-  /* border-radius: 50px; */
-  /* border: 2px solid #2a3d69bb; */
   z-index: 1;
   padding: 1rem 0.5rem;
-}
-
-.pageContainer {
-  transition: 0.3s all ease;
 }
 
 .navEl {
@@ -41,7 +33,6 @@ nav {
   z-index: 1;
 }
 .navEl.active {
-  /* background: #2a3d69; */
   transform: rotate(360deg);
   border-radius: 50%;
   box-shadow: 0 0 10px #505050;

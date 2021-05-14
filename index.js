@@ -1,21 +1,28 @@
 function togglePage(pos) {
-    
-    let i = 3;
-    while (i > 0) {
-      navElement[i - 1].classList.remove("active");
-      i--;
-    }
+  let i = 3;
+  while (i > 0) {
+    navElement[i - 1].classList.remove("active");
+    i--;
+  }
   var scroll = "translateY(-" + (pos - 1) * 100 + "%)";
   page[0].style.transform = scroll;
   navElement[pos - 1].classList.add("active");
 }
-function toggleIcon(pos){
+function toggleMenu() {
+  console.log('clicked');
+  burgerMenu.classList.toggle("is-active");
+  nav.classList.toggle("active");
+  burgerMenu.classList.toggle("active");
 }
 
 let navElement = document.querySelectorAll("div.navEl"),
   page = document.getElementsByClassName("pageContainer"),
   pos = 1,
-  i = 1;
+  i = 1,
+ burgerMenu = document.getElementById("burger")
+ nav = document.querySelector("nav");
+
+  burgerMenu.addEventListener("click", toggleMenu);
 
 Array.from(navElement).forEach(function (e) {
   e.addEventListener("click", function () {

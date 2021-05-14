@@ -34,24 +34,56 @@ Array.from(navElement).forEach(function (e) {
   });
 });
 
-const slider = document.querySelector("section.pageContainer");
+//const slider = document.querySelector("section.pageContainer");
 
-let touchStart, touchEnd;
+// let touchStart, touchEnd;
 
-slider.addEventListener(
-  "touchstart",
-  (e) => (touchStart = e.targetTouches[0].clientY)
-);
-slider.addEventListener(
-  "touchmove",
-  (e) => (touchEnd = e.targetTouches[0].clientY)
-);
-slider.addEventListener("touchend", (e) => {
-  if (touchStart - touchEnd < 30 && pos > 1) {
-    pos--;
-    togglePage(pos);
-  } else if (touchStart - touchEnd > 30 && pos < 3) {
-    pos++;
-    togglePage(pos);
-  }
+// slider.addEventListener(
+//   "touchstart",
+//   (e) => (touchStart = e.targetTouches[0].clientY)
+// );
+
+// slider.addEventListener(
+//   "touchmove",
+//   (e) => (touchEnd = e.targetTouches[0].clientY)
+// );
+
+// slider.addEventListener("touchend", (e) => {
+//   if (touchStart - touchEnd < 30 && pos > 1) {
+//     pos--;
+//     togglePage(pos);
+//   } else if (touchStart - touchEnd > 30 && pos < 3) {
+//     pos++;
+//     togglePage(pos);
+//   }
+// });
+
+const main =  document.querySelector('#main');
+const sections = document.querySelectorAll('.main');
+console.log(sections);
+const navLi = document.querySelectorAll('.navEl');
+console.log(navLi);
+window.addEventListener('scroll',()=>{
+  console.log('scrolling');
+  let current = '';
+  sections.forEach((div)=>{
+    const sectionTop = div.offsetTop;
+    const sectionHeight = div.clientHeight;
+    // console.log('pageYOffset: '+ pageYOffset);
+    // console.log('sectionTop: '+sectionTop);
+    // console.log('sectionHeight: '+sectionHeight);
+    // console.log('sectionTop - sectionHeight / 3: '+ (sectionTop - sectionHeight / 3));
+    // console.log(pageYOffset >= sectionTop - sectionHeight / 3);
+    if(pageYOffset >= sectionTop - sectionHeight / 3)
+      current = div.getAttribute("id");
+      console.log(current);
+  });
+
+  navLi.forEach((a) => {
+    console.log(a.classList);
+    a.classList.remove("active");
+    if(a.classList.contains(current)){
+      a.classList.add("active");
+    }
+  })
 });

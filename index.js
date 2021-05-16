@@ -6,11 +6,12 @@ function toggleMenu() {
 
 let navElement = document.querySelectorAll(".navEl"),
   burgerMenu = document.getElementById("burger"),
+  toggle = document.getElementById("toggle"),
   nav = document.querySelector("nav"),
   sections = document.querySelectorAll(".main");
 
 
-burgerMenu.addEventListener("click", toggleMenu);
+toggle.addEventListener("click", toggleMenu);
 window.addEventListener("scroll", () => {
   let current = "";
   sections.forEach((div) => {

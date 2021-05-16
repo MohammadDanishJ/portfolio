@@ -18,7 +18,7 @@ window.addEventListener("scroll", () => {
     const sectionHeight = div.clientHeight;
     if (pageYOffset >= sectionTop - sectionHeight / 3){
       current = div.getAttribute("id");
-      window.locatio.hash = current;
+      window.location.hash = current;
     }
   });
 

@@ -16,8 +16,10 @@ window.addEventListener("scroll", () => {
   sections.forEach((div) => {
     const sectionTop = div.offsetTop;
     const sectionHeight = div.clientHeight;
-    if (pageYOffset >= sectionTop - sectionHeight / 3)
+    if (pageYOffset >= sectionTop - sectionHeight / 3){
       current = div.getAttribute("id");
+      window.locatio.hash = current;
+    }
   });
 
   navElement.forEach((a) => {

@@ -8,7 +8,7 @@ let navElement = document.querySelectorAll(".navEl"),
   burgerMenu = document.getElementById("burger"),
   toggle = document.getElementById("toggle"),
   nav = document.querySelector("nav"),
-  sections = document.querySelectorAll(".main");
+  sections = document.querySelectorAll(".main"),current;
 
 
 toggle.addEventListener("click", toggleMenu);
@@ -19,7 +19,7 @@ window.addEventListener("scroll", () => {
     const sectionHeight = div.clientHeight;
     if (pageYOffset >= sectionTop - sectionHeight / 3){
       current = div.getAttribute("id");
-      window.location.hash = current;
+      // window.location.hash = current;
     }
   });
 

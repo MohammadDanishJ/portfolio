@@ -15,7 +15,8 @@ main {
 main,
 nav,
 .navEl.active,
-.gitHub {
+.gitHub,
+.hireMe {
     background: linear-gradient(45deg, rgb(0, 14, 42), rgb(41, 0, 29));
 }
 
@@ -38,7 +39,8 @@ nav {
 
 .navEl.active,
 .logo,
-.gitHub {
+.gitHub,
+.hireMe {
     transform: rotate(360deg);
     border-radius: 50%;
     box-shadow: 0 0 10px #505050;
@@ -53,7 +55,7 @@ nav {
     height: 20px;
     width: 20px;
     filter: invert(55%) sepia(0%) saturate(600%) hue-rotate(243deg) brightness(64%) contrast(66%);
-    transition: 0.3s all;
+    transition: all 0.3s;
 }
 
 .navEl.active>img {
@@ -112,6 +114,18 @@ nav {
     height: 45px;
     background: url(./assets/images/img/logo.webp);
     background-size: cover;
+}
+
+.hireMe {
+    margin: 1rem 2rem;
+    border-radius: 5px;
+    color: #f0f0f0;
+    box-shadow: 5px 5px 8px #505050;
+}
+
+.hireMe:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 2px 2px 6px #505050;
 }
 
 @keyframes blob {

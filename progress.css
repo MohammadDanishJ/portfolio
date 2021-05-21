@@ -1,0 +1,247 @@
+.container {
+    overflow: scroll;
+}
+
+.container__progressbars {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 270px;
+    width: 100%;
+    min-height: 100%;
+}
+
+.progressbar {
+    position: relative;
+    width: 170px;
+    height: 170px;
+    margin: 1em;
+    transform: rotate(-90deg);
+}
+
+.progressbar__svg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.progressbar__svg-circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 10;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke: white;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+
+.shadow-html {
+    filter: drop-shadow(0 0 5px #ff6633);
+}
+
+.shadow-css {
+    filter: drop-shadow(0 0 5px #33bbff);
+}
+
+.shadow-php {
+    filter: drop-shadow(0 0 5px #ff33ff);
+}
+
+.shadow-js {
+    filter: drop-shadow(0 0 5px #ffff33);
+}
+
+.shadow-ts {
+    filter: drop-shadow(0 0 5px #3377ff);
+}
+
+.shadow-node {
+    filter: drop-shadow(0 0 5px #55ff33);
+}
+
+.shadow-react {
+    filter: drop-shadow(0 0 5px #33ffff);
+}
+
+.shadow-angular {
+    filter: drop-shadow(0 0 5px #ff3333);
+}
+
+.shadow-vue {
+    filter: drop-shadow(0 0 5px #33ff88);
+}
+
+.circle-html {
+    -webkit-animation: anim_circle-html 1s ease-in-out forwards;
+    animation: anim_circle-html 1s ease-in-out forwards;
+}
+
+.circle-css {
+    -webkit-animation: anim_circle-css 1s ease-in-out forwards;
+    animation: anim_circle-css 1s ease-in-out forwards;
+}
+
+.circle-php {
+    -webkit-animation: anim_circle-php 1s ease-in-out forwards;
+    animation: anim_circle-php 1s ease-in-out forwards;
+}
+
+.circle-js {
+    -webkit-animation: anim_circle-js 1s ease-in-out forwards;
+    animation: anim_circle-js 1s ease-in-out forwards;
+}
+
+.circle-ts {
+    -webkit-animation: anim_circle-ts 1s ease-in-out forwards;
+    animation: anim_circle-ts 1s ease-in-out forwards;
+}
+
+.circle-node {
+    -webkit-animation: anim_circle-node 1s ease-in-out forwards;
+    animation: anim_circle-node 1s ease-in-out forwards;
+}
+
+.circle-react {
+    -webkit-animation: anim_circle-react 1s ease-in-out forwards;
+    animation: anim_circle-react 1s ease-in-out forwards;
+}
+
+.circle-angular {
+    -webkit-animation: anim_circle-angular 1s ease-in-out forwards;
+    animation: anim_circle-angular 1s ease-in-out forwards;
+}
+
+.circle-vue {
+    -webkit-animation: anim_circle-vue 1s ease-in-out forwards;
+    animation: anim_circle-vue 1s ease-in-out forwards;
+}
+
+.progressbar__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 0.25em 0.5em;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0.25em;
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+@-webkit-keyframes anim_circle-html {
+    to {
+        stroke-dashoffset: 30;
+    }
+}
+
+@keyframes anim_circle-html {
+    to {
+        stroke-dashoffset: 30;
+    }
+}
+
+@-webkit-keyframes anim_circle-css {
+    to {
+        stroke-dashoffset: 40;
+    }
+}
+
+@keyframes anim_circle-css {
+    to {
+        stroke-dashoffset: 40;
+    }
+}
+
+@-webkit-keyframes anim_circle-php {
+    to {
+        stroke-dashoffset: 80;
+    }
+}
+
+@keyframes anim_circle-php {
+    to {
+        stroke-dashoffset: 80;
+    }
+}
+
+@-webkit-keyframes anim_circle-js {
+    to {
+        stroke-dashoffset: 88;
+    }
+}
+
+@keyframes anim_circle-js {
+    to {
+        stroke-dashoffset: 88;
+    }
+}
+
+@-webkit-keyframes anim_circle-ts {
+    to {
+        stroke-dashoffset: 198;
+    }
+}
+
+@keyframes anim_circle-ts {
+    to {
+        stroke-dashoffset: 198;
+    }
+}
+
+@-webkit-keyframes anim_circle-node {
+    to {
+        stroke-dashoffset: 308;
+    }
+}
+
+@keyframes anim_circle-node {
+    to {
+        stroke-dashoffset: 308;
+    }
+}
+
+@-webkit-keyframes anim_circle-react {
+    to {
+        stroke-dashoffset: 307.2;
+    }
+}
+
+@keyframes anim_circle-react {
+    to {
+        stroke-dashoffset: 307.2;
+    }
+}
+
+@-webkit-keyframes anim_circle-angular {
+    to {
+        stroke-dashoffset: 318;
+    }
+}
+
+@keyframes anim_circle-angular {
+    to {
+        stroke-dashoffset: 318;
+    }
+}
+
+@-webkit-keyframes anim_circle-vue {
+    to {
+        stroke-dashoffset: 431.2;
+    }
+}
+
+@keyframes anim_circle-vue {
+    to {
+        stroke-dashoffset: 431.2;
+    }
+}
+
+
+/* 
+@media(max-width:768px) {
+    .progressbar {
+        transform: scale(.6) rotate(-90deg);
+    }
+} */

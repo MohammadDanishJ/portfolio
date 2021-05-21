@@ -10,7 +10,7 @@
 
 body {
     background-color: #050c1c;
-    background: linear-gradient(45deg, rgb(0,14,42), rgb(41,0,29));
+    background: linear-gradient(45deg, rgb(0, 14, 42), rgb(41, 0, 29));
     color: #c1c1c1 !important;
     font: 400 16px/24px Roboto, Noto Sans, Noto Sans JP, Noto Sans KR, Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali, sans-serif;
     word-wrap: break-word;
@@ -45,6 +45,7 @@ body {
 
 a {
     color: #2d5dda;
+    text-decoration: none;
 }
 
 a:hover {
@@ -107,6 +108,10 @@ button {
 
 .flfs {
     justify-content: flex-start;
+}
+
+.flas {
+    align-items: flex-start;
 }
 
 .fldrw {

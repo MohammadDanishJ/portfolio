@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -12,8 +14,11 @@ body {
     background-color: #050c1c;
     background: linear-gradient(45deg, rgb(0, 14, 42), rgb(41, 0, 29));
     color: #c1c1c1 !important;
-    font: 400 16px/24px Roboto, Noto Sans, Noto Sans JP, Noto Sans KR, Noto Naskh Arabic, Noto Sans Thai, Noto Sans Hebrew, Noto Sans Bengali, sans-serif;
+    font: 400 16px/24px Roboto, Noto Sans, Noto Sans JP, Noto Sans KR, Noto Naskh Arabic, Noto Sans Thai,
+        Noto Sans Hebrew, Noto Sans Bengali, sans-serif;
     word-wrap: break-word;
+    font-family: "Signika Negative", sans-serif;
+    font-weight: 300;
 }
 
 ::-webkit-scrollbar {
@@ -22,24 +27,24 @@ body {
     height: 6px;
 }
 
- ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: none;
 }
 
- ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: #006eff;
     border-radius: 20px;
 }
 
- ::-webkit-scrollbar-corner {
+::-webkit-scrollbar-corner {
     background: none;
 }
 
- ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: #2d5dda70;
 }
 
- ::-webkit-scrollbar-thumb:active {
+::-webkit-scrollbar-thumb:active {
     background: #2d5dda;
 }
 
@@ -73,7 +78,7 @@ a.inherit:active {
 }
 
 .pclr:hover {
-    opacity: .7;
+    opacity: 0.7;
 }
 
 .pclr:active {
@@ -208,11 +213,11 @@ textarea {
 }
 
 .o5 {
-    opacity: .5;
+    opacity: 0.5;
 }
 
 .t2s {
-    transition: .2s linear;
+    transition: 0.2s linear;
 }
 
 .zmn1 {

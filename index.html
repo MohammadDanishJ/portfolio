@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- test -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,6 +23,9 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="assets/css/hamburger.css">
     <link rel="stylesheet" href="progress.css">
+
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
@@ -68,7 +72,8 @@
                         <div class="headline">Mohd Danish</div>
                         <div class="subline">Web Developer / Software Engineer</div>
                     </div>
-                    <a href="mailto:conatct.mdtechs@gmail.com?subject=Want to Hire. Source: Portfolio&body=Hey Mohd Danish, I reached you from your Portfolio." class="hireMe p12">Hire Me</a>
+                    <a href="mailto:conatct.mdtechs@gmail.com?subject=Want to Hire. Source: Portfolio&body=Hey Mohd Danish, I reached you from your Portfolio."
+                        class="hireMe p12">Hire Me</a>
                 </div>
                 <div class="fl flc fldcl">
                     <div class="blob"></div>
@@ -78,89 +83,47 @@
             <section id="main2" class="main prel fl flc h100vh">
                 <div class="intro lhinit fl flc fldcl">
                     <div class="headline">About</div>
-                    <div class="subline">Professional Experience in Web Development Using HTML, CSS, JavaScript, MySql, Firebase, skilled in website development, testing, documentation etc. across the complete development life cycle of a product. Handles complex project management
+                    <div class="subline">Professional Experience in Web Development Using HTML, CSS, JavaScript, MySql,
+                        Firebase, skilled in website development, testing, documentation etc. across the complete
+                        development life cycle of a product. Handles complex project management
                         & coordination work very efficiently to deliver results.</div>
                 </div>
             </section>
 
-            <section id="main4" class="main prel fl flc">
+            <section id="main4" class="horizontal main prel">
+                <div class="intro lhinit fl flc fldcl">
+                    <div class="headline">Qualifications</div>
+                    <div class="subline">Web Developer / Software Engineer</div>
+                </div>
 
-                <div class="container fl flc">
-
-                    <div class="container__progressbars">
-
-                        <div class="progressbar">
-                            <svg class="progressbar__svg">
-                                <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-html shadow-html">
-                                </circle>
-                            </svg>
-                            <span class="progressbar__text shadow-html">HTML</span>
+                <div class="pin-wrap">
+                    <div class="animation-wrap to-right wrapper qualifications-container">
+                        <div class="qualification">
+                            <div class="content html"></div>
+                            <h1>html</h1>
                         </div>
-
-                        <div class="progressbar">
-                            <svg class="progressbar__svg">
-                                <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-css shadow-css">
-                                </circle>
-                            </svg>
-                            <span class="progressbar__text shadow-css">CSS</span>
+                        <div class="qualification">
+                            <div class="content css"></div>
+                            <h1>css</h1>
                         </div>
-
-                        <div class="progressbar">
-                            <svg class="progressbar__svg">
-                                <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-php shadow-php">
-                                </circle>
-                            </svg>
-                            <span class="progressbar__text shadow-php">PHP</span>
+                        <div class="qualification">
+                            <div class="content javascript"></div>
+                            <h1>javascript</h1>
                         </div>
-
-                        <div class="progressbar">
-                            <svg class="progressbar__svg">
-                                <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-js shadow-js">
-                                </circle>
-                            </svg>
-                            <span class="progressbar__text shadow-js">JavaScript</span>
+                        <div class="qualification">
+                            <div class="content bootstrap"></div>
+                            <h1>bootstrap</h1>
                         </div>
-
-                        <!-- <div class="progressbar">
-                            <svg class="progressbar__svg">
-                                <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-ts shadow-ts">
-                                </circle>
-                            </svg>
-                            <span class="progressbar__text shadow-ts">TypeScript</span>
+                        <div class="qualification">
+                            <div class="content react"></div>
+                            <h1>react</h1>
                         </div>
-
-                        <div class="progressbar">
-                            <svg class="progressbar__svg">
-                                <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-node shadow-node">
-                                </circle>
-                            </svg>
-                            <span class="progressbar__text shadow-node">Node.js</span>
+                        <div class="qualification">
+                            <div class="content c-plus-plus"></div>
+                            <h1>c++</h1>
                         </div>
-
-                        <div class="progressbar">
-                            <svg class="progressbar__svg">
-                                <circle cx="80" cy="80" r="70"
-                                    class="progressbar__svg-circle circle-react shadow-react"> </circle>
-                            </svg>
-                            <span class="progressbar__text shadow-react">React.js</span>
-                        </div>
-                        <div class="progressbar">
-                            <svg class="progressbar__svg">
-                                <circle cx="80" cy="80" r="70"
-                                    class="progressbar__svg-circle circle-angular shadow-angular"> </circle>
-                            </svg>
-                            <span class="progressbar__text shadow-angular">Angular.js</span>
-                        </div>
-                        <div class="progressbar">
-                            <svg class="progressbar__svg">
-                                <circle cx="80" cy="80" r="70" class="progressbar__svg-circle circle-vue shadow-vue">
-                                </circle>
-                            </svg>
-                            <span class="progressbar__text shadow-vue">Vue.js</span>
-                        </div>
-                    </div> -->
-
                     </div>
+                </div>
 
             </section>
 
@@ -181,8 +144,8 @@
         <!-- footer -->
         <footer class="d-none">footer</footer>
         <!-- footer -->
-        </div>
-        <script src="index.js"></script>
+    </div>
+    <script src="index.js"></script>
 </body>
 
 </html>

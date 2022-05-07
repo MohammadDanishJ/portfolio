@@ -22,7 +22,7 @@ body {
 .qualifications-container .qualification {
   position: relative;
   height: 550px;
-  min-width: 40%;
+  width: 300px;
   background-color: rgb(9, 6, 31);
   border-radius: 20px;
   margin: 0 20px 0 0;

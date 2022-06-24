@@ -8,6 +8,7 @@
 }
 
 main {
+    margin-right:4.5rem;
     padding: 2rem 4rem;
     overflow: auto;
 }
@@ -147,6 +148,7 @@ nav {
 
 @media (max-width: 768px) {
     main {
+        margin-right:0;
         padding: .5rem;
     }
     .main {

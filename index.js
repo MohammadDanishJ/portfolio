@@ -44,9 +44,9 @@ horizontalSections.forEach(function (sec, i) {
         ease: "none",
         scrollTrigger: {
             trigger: sec,
-            start: "-50px top",
+            start: "-50px bottom",
             end: () => "+=" + (thisAnimWrap.scrollWidth - window.innerWidth),
-            pin: thisPinWrap,
+            // pin: thisPinWrap,
             invalidateOnRefresh: true,
             //anticipatePin: 1,
             scrub: true,

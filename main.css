@@ -236,6 +236,22 @@ textarea {
     text-align: center;
 }
 
+.capital {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+.bold{
+font-weight: bold;
+}
+
 .p12 {
     padding: 1rem 2rem;
+}
+
+.mb-4 {
+    margin-bottom: 4rem;
 }

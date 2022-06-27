@@ -12,8 +12,6 @@ body {
 
 .qualifications-container {
   display: flex;
-  height: 80%;
-  width: 90%;
   user-select: none;
   flex-wrap: nowrap;
   background-color: rgb(9, 6, 31);
@@ -116,30 +114,6 @@ body {
   overflow: hidden;
   position: relative;
   width: 100%;
-}
-
-.slider:first-of-type {
-  margin-top: 2rem;
-}
-
-.slider::before,
-.slider::after {
-  content: "";
-  height: 100px;
-  position: absolute;
-  width: 200px;
-  z-index: 2;
-}
-
-.slider::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
-}
-
-.slider::before {
-  left: 0;
-  top: 0;
 }
 
 .slider .slide-track {

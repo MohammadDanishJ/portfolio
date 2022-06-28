@@ -32,8 +32,9 @@ body {
   height: 45px;
   width: 45px;
   border-radius: 15px;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
+  background-color: rgb(18, 12, 65);
 }
 
 .qualifications-container .qualification h1 {
@@ -43,27 +44,42 @@ body {
 }
 
 .qualifications-container .qualification .content.html {
-  background: rgba(255, 255, 255, 0.103) url(./assets/images/img/html.png);
+  background: rgb(18, 12, 65) url(./assets/images/img/html.png);
 }
 .qualifications-container .qualification .content.css {
-  background: rgba(255, 255, 255, 0.103) url(./assets/images/img/css.png);
+  background: rgb(18, 12, 65) url(./assets/images/img/css.png);
 }
 .qualifications-container .qualification .content.javascript {
-  background: rgba(255, 255, 255, 0.103) url(./assets/images/img/js.jpg);
+  background: rgb(18, 12, 65) url(./assets/images/img/js.png);
 }
 .qualifications-container .qualification .content.bootstrap {
-  background: rgba(255, 255, 255, 0.103) url(./assets/images/img/bootstrap.png);
+  background: rgb(18, 12, 65) url(./assets/images/img/bootstrap.png);
 }
 .qualifications-container .qualification .content.react {
-  background: rgba(255, 255, 255, 0.103) url(./assets/images/img/react.png);
+  background: rgb(18, 12, 65) url(./assets/images/img/react.png);
 }
 .qualifications-container .qualification .content.c-plus-plus {
-  background: rgba(255, 255, 255, 0.103) url(./assets/images/img/c-plus-plus.png);
+  background: rgb(18, 12, 65) url(./assets/images/img/c-plus-plus.png);
+}
+.qualifications-container .qualification .content.firebase {
+  background: rgb(18, 12, 65) url(./assets/images/img/firebase.png);
+}
+.qualifications-container .qualification .content.git {
+  background: rgb(18, 12, 65) url(./assets/images/img/git.png);
+}
+.qualifications-container .qualification .content.jquery {
+  background: rgb(18, 12, 65) url(./assets/images/img/jquery.png);
+}
+.qualifications-container .qualification .content.mysql {
+  background: rgb(18, 12, 65) url(./assets/images/img/mysql.png);
+}
+.qualifications-container .qualification .content.php {
+  background: rgb(18, 12, 65) url(./assets/images/img/php.png);
 }
 
 .qualifications-container .qualification .content {
   background-position: center !important;
-  background-size: 100% !important;
+  background-size: 90% !important;
   /* background-size: 66px !important; */
   background-repeat: no-repeat !important;
 }
@@ -74,7 +90,7 @@ body {
   }
 
   100% {
-    transform: translateX(calc(-250px * 6));
+    transform: translateX(calc(-250px * 11));
   }
 }
 
@@ -84,13 +100,13 @@ body {
   }
 
   100% {
-    transform: translateX(calc(-250px * 6));
+    transform: translateX(calc(-250px * 11));
   }
 }
 
 @-webkit-keyframes scroll-reverse {
   0% {
-    transform: translateX(calc(-250px * 6));
+    transform: translateX(calc(-250px * 11));
   }
 
   100% {
@@ -100,7 +116,7 @@ body {
 
 @keyframes scroll-reverse {
   0% {
-    transform: translateX(calc(-250px * 6));
+    transform: translateX(calc(-250px * 11));
   }
 
   100% {
@@ -117,18 +133,18 @@ body {
 }
 
 .slider .slide-track {
-  -webkit-animation: scroll 30s linear infinite;
-  animation: scroll 30s linear infinite;
+  -webkit-animation: scroll 50s linear infinite;
+  animation: scroll 50s linear infinite;
   display: flex;
-  width: calc(250px * 12);
+  width: calc(250px * 22);
 }
 
 .slider .slide-track.slide-reverse {
-  -webkit-animation: scroll-reverse 30s linear infinite;
-  animation: scroll-reverse 30s linear infinite;
+  -webkit-animation: scroll-reverse 50s linear infinite;
+  animation: scroll-reverse 50s linear infinite;
   display: flex;
   flex-direction: row-reverse;
-  width: calc(250px * 12);
+  width: calc(250px * 22);
 }
 
 .slider .slide {

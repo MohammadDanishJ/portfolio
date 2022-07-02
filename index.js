@@ -17,14 +17,14 @@ window.addEventListener("scroll", () => {
   sections.forEach((div) => {
     const sectionTop = div.offsetTop;
     const sectionHeight = div.clientHeight;
-    if (pageYOffset >= sectionTop - sectionHeight / 3){
-      current = div.getAttribute("id");
-      // window.location.hash = current;
-    }
+    if (pageYOffset >= sectionTop - sectionHeight / 4) current = div.getAttribute("id")
   });
 
   navElement.forEach((a) => {
     a.classList.remove("active");
-    if (a.classList.contains(current)) a.classList.add("active");
+    if (a.classList.contains(current)) {
+      a.classList.add("active")
+      window.location.hash = current;
+    }
   });
 });

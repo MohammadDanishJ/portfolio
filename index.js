@@ -24,7 +24,7 @@ window.addEventListener("scroll", () => {
     a.classList.remove("active");
     if (a.classList.contains(current)) {
       a.classList.add("active")
-      window.location.hash = current;
+      // window.location.hash = current;
     }
   });
 });

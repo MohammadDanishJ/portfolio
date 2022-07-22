@@ -53,7 +53,7 @@ nav {
     transform: scale(1.2);
 }
 
-.navEl>img {
+.navEl>img,.icon {
     height: 20px;
     width: 20px;
     filter: invert(55%) sepia(0%) saturate(600%) hue-rotate(243deg) brightness(64%) contrast(66%);
@@ -123,6 +123,8 @@ nav {
     border-radius: 5px;
     color: #f0f0f0;
     box-shadow: 5px 5px 8px #505050;
+    width: 150px;
+    text-align: center;
 }
 
 .hireMe:hover {
@@ -200,5 +202,9 @@ nav {
     }
     .hamburger .line {
         display: block !important;
+    }
+
+    .interaction-btn>.hireMe{
+        margin: .5rem 1rem;
     }
 }

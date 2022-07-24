@@ -1,24 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-
+import './App.css'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      {/* <!-- Under Construction --> */}
+      <div className="pfx t0 pt-.5 pb-.5 pl-.5 pr-.5"
+        style={{ zIndex: 1, background: 'linear-gradient(45deg, rgba(0, 14, 42, 0.6), rgba(41, 0, 29, 0.6))' }}>We're
+        Under Construction</div>
+      {/* <!-- Under Construction --> */}
+    </main>
   );
 }
 

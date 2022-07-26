@@ -1,5 +1,7 @@
 # Mohammad Danish Portfolio
 
-Professional Profile page of Mohammad Danish, Using HTML, CSS &amp; JS
+Portfolio of Mohammad Danish, served via React.js
 <br>
-https://mohammaddanishj.netlify.app/
+https://mohammaddanishj.netlify.app/ [UNDER DEVELOPMENT]
+<br/><br/>
+Previous Version: https://portfolio-discarded.netlify.app/

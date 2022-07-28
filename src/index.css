@@ -24,18 +24,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  overflow: hidden;
+}
+
 main {
   background: linear-gradient(45deg, rgb(0, 14, 42), rgb(41, 0, 29));
   position: relative;
-  height: 100vh;
-  /* height: 100%; */
+  /* height: 100vh; */
+  height: 100%;
   width: 100vw;
   overflow: auto;
 }
 
 ::-webkit-scrollbar {
   display: block;
-  width: 4px;
+  width: 5px;
   height: 6px;
 }
 
@@ -44,7 +48,7 @@ main {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #6e00ff;
+  background: #264fb8;
   border-radius: 20px;
 }
 
@@ -53,11 +57,11 @@ main {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #2d5dda70;
+  background: #2d5dda;
 }
 
 ::-webkit-scrollbar-thumb:active {
-  background: #2d5dda;
+  background: #346dfd;
 }
 
 a,

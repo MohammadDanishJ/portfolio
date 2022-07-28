@@ -1,4 +1,5 @@
 import React from 'react'
+import {Contact} from '../../components/Components'
 
 const Home = () => {
   return (
@@ -12,6 +13,10 @@ const Home = () => {
       {/* Previous version tag */}
       <a target='_blank' rel='noreferrer' href='https://portfolio-discarded.netlify.app' className="pfx t0 r0 pt-.5 pb-.5 pl-.5 pr-.5">Click to visit previous version</a>
       {/* Previous version tag */}
+
+      <section id="home" class="main prel fl fl-c h100vh" style={{fontSize: 102}}>Hola!</section>
+
+      <Contact/>
     </main>
   )
 }

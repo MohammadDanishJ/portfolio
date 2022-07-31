@@ -6,7 +6,7 @@ const Home = () => {
     <main>
       {/* <!-- Under Construction --> */}
       <div className="pfx t0 pt-.5 pb-.5 pl-.5 pr-.5 p12"
-        style={{ zIndex: 1, background: 'linear-gradient(45deg, rgba(0, 14, 42, 0.6), rgba(41, 0, 29, 0.6))', borderRadius:'0 0 20px 0', boxShadow: '0 0 20px rgb(56,56,56)'}}>We're
+        style={{ zIndex: 1, background: 'linear-gradient(45deg, rgba(0, 14, 42, 0.6), rgba(41, 0, 29, 0.6))', borderRadius:'0 0 20px 0', boxShadow: '0 0 20px rgb(56,56,56)', cursor: 'default'}}>We're
         Under Construction</div>
       {/* <!-- Under Construction --> */}
 

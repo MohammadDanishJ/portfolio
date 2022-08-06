@@ -9,10 +9,15 @@ const LandingSection = () => {
         <div className='fl text-center' style={{fontSize: 102}}>Mohammad Danish</div>
         <div className='fl' style={{fontSize: 18, color:'#999', letterSpacing:2, paddingTop:10}}>Web Developer | Software Engineer | React Developer</div>
     </div>
-    <div className='fl fl-c fl-d-cl oscilate p12' style={{fontSize: 16, color:'#999',}}>
+    {/* <div className='fl fl-c fl-d-cl '> */}
+      <div className='fl fl-c fl-d-cl w100' style={{fontSize: 24, color:'#666',transform: 'translateY(90px)'}}>
+        <div className='fl fl-c fl-d-cl oscilate' >
         <div>Scroll Down</div>
-        <MdArrowBackIosNew style={{transform: 'rotate(-90deg)'}} size={24}/>
-    </div>
+          <MdArrowBackIosNew style={{transform: 'rotate(-90deg)'}} size={24}/>
+          <MdArrowBackIosNew style={{transform: 'rotate(-90deg) translateX(14px)'}} size={24}/>
+        </div>
+      </div>
+    {/* </div> */}
     </section>
   )
 }

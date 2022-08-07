@@ -39,8 +39,10 @@ main {
 
 ::-webkit-scrollbar {
   display: block;
-  width: 5px;
-  height: 6px;
+  width: 4px;
+}
+::-webkit-scrollbar:hover {
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -49,7 +51,7 @@ main {
 
 ::-webkit-scrollbar-thumb {
   background: #264fb8;
-  border-radius: 20px;
+  border-radius: 0px;
 }
 
 ::-webkit-scrollbar-corner {

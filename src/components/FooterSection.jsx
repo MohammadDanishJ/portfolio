@@ -4,7 +4,7 @@ import {BsGithub} from 'react-icons/bs'
 const FooterSection = () => {
   console.log('j')
   return (
-    <section id="contact" className="main prel fl fl-c">
+    <section id="Footer" className="main prel fl fl-c">
         <div className="container lhinit fl fl-c fl-d-cl">
             <div className='fl fl-c fl-d-cl'>
                 <div className='p12 text-center'>Designed and Developed by <strong>Mohammad Danish</strong></div>

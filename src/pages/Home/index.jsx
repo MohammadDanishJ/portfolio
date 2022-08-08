@@ -1,5 +1,5 @@
 import React from 'react'
-import {Contact, LandingSection} from '../../components/Components'
+import {Contact, FooterSection, LandingSection} from '../../components/Components'
 
 const Home = () => {
   return (
@@ -16,6 +16,7 @@ const Home = () => {
 
       <LandingSection />
       <Contact/>
+      <FooterSection/>
     </main>
   )
 }

@@ -8,14 +8,16 @@
     padding-right: 15px;
     padding-left: 15px;
 }
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
 @media (min-width: 992px) {
     .container {
         flex: 0 0 83.33333%;
         max-width: 83.33333%;
-    }
-}
-@media (min-width: 768px) {
-    .container {
-        max-width: 720px;
     }
 }

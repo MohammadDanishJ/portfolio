@@ -11,7 +11,7 @@ const Contact = () => {
                 <div className='text-center'>AVAILABLE FOR FREELANCE PROJECTS</div>
             </div>
             <div className="header">
-              <div className="header-title text-center">Do you have a project?<br/> Let's talk.</div>
+              <div className="header-title text-center" style={{fontWeight:700}}>Do you have a project?<br/> Let's talk.</div>
             </div>
             <div>
               <a className='button' href="mailto:conatct.mdtechs@gmail.com?subject=Want to Hire. Source: Portfolio&body=Hey Mohd Danish, I reached you from your Portfolio."><BsFillChatFill size={16} style={{marginRight:6}}/> Lets Talk Now</a>

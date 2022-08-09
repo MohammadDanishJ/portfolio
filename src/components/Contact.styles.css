@@ -19,17 +19,18 @@
     margin-bottom: 0px;
     color: rgb(255, 255, 255);
 }
-@media (min-width: 992px) {
-    .header-title {
-        font-size: 60px;
-        line-height: 70px;
-    }
-}
 
 @media (min-width: 576px) {
     .header-title {
         font-size: 50px;
         line-height: 62px;
+    }
+}
+
+@media (min-width: 992px) {
+    .header-title {
+        font-size: 60px;
+        line-height: 70px;
     }
 }
 

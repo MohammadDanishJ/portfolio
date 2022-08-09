@@ -6,7 +6,7 @@ const LandingSection = () => {
   return (
     <section id="home" class="main prel fl fl-c fl-d-cl h100vh">
     <div className="container lhinit fl fl-c fl-d-cl">
-        <div className='fl text-center' style={{fontSize: 102}}>Mohammad Danish</div>
+        <div className='fl text-center' style={{fontSize: 102, fontWeight:700}}>Mohammad Danish</div>
         <div className='fl text-center' style={{fontSize: 18, color:'#999', letterSpacing:2, paddingTop:10, fontFamily:'monospace'}}>Web Developer | Software Engineer | React Developer</div>
     </div>
     {/* <div className='fl fl-c fl-d-cl '> */}

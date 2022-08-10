@@ -6,7 +6,7 @@ const ContactSection = () => {
   return (
     <section id="contact" className="main prel fl fl-c">
         <div className="container lhinit fl fl-c fl-d-cl">
-            <div className='fl'>
+            <div className='fl fl-c'>
                 <div className='circle'></div>
                 <div className='text-center'>AVAILABLE FOR FREELANCE PROJECTS</div>
             </div>

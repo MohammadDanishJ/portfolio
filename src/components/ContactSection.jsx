@@ -1,7 +1,7 @@
 import React from 'react'
-import './Contact.styles.css'
+import './ContactSection.styles.css'
 import {BsFillChatFill} from 'react-icons/bs'
-const Contact = () => {
+const ContactSection = () => {
   console.log('j')
   return (
     <section id="contact" className="main prel fl fl-c">
@@ -21,4 +21,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default ContactSection

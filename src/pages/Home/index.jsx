@@ -1,5 +1,5 @@
 import React from 'react'
-import {Contact, FooterSection, LandingSection} from '../../components/Components'
+import {ContactSection, FooterSection, LandingSection} from '../../components/Components'
 
 const Home = () => {
   return (
@@ -15,7 +15,7 @@ const Home = () => {
       {/* Previous version tag */}
 
       <LandingSection />
-      <Contact/>
+      <ContactSection/>
       <FooterSection/>
     </main>
   )

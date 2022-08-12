@@ -1,5 +1,5 @@
 import React from 'react'
-import './FooterSection.styles.css'
+import './styles.css'
 import {BsGithub} from 'react-icons/bs'
 const FooterSection = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import {MdArrowBackIosNew} from 'react-icons/md'
-import './LandingSection.styles.css'
+import './styles.css'
 
 const LandingSection = () => {
   return (

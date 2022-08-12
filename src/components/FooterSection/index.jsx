@@ -2,7 +2,6 @@ import React from 'react'
 import './FooterSection.styles.css'
 import {BsGithub} from 'react-icons/bs'
 const FooterSection = () => {
-  console.log('j')
   return (
     <section id="Footer" className="main prel fl fl-c">
         <div className="container lhinit fl fl-c fl-d-cl">

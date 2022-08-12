@@ -2,7 +2,6 @@ import React from 'react'
 import './ContactSection.styles.css'
 import {BsFillChatFill} from 'react-icons/bs'
 const ContactSection = () => {
-  console.log('j')
   return (
     <section id="contact" className="main prel fl fl-c">
         <div className="container lhinit fl fl-c fl-d-cl">

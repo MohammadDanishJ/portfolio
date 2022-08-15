@@ -8,7 +8,7 @@
 }
 
 main {
-    margin-right:4.5rem;
+    margin-right: 4.5rem;
     padding: 0 4rem 2rem 4rem;
     overflow: auto;
 }
@@ -53,19 +53,20 @@ nav {
     transform: scale(1.2);
 }
 
-.navEl>img,.icon {
+.navEl > img,
+.icon {
     height: 20px;
     width: 20px;
     filter: invert(55%) sepia(0%) saturate(600%) hue-rotate(243deg) brightness(64%) contrast(66%);
     transition: all 0.3s;
 }
 
-.navEl.active>img {
+.navEl.active > img {
     filter: invert(85%) sepia(0%) saturate(991%) hue-rotate(243deg) brightness(74%) contrast(76%);
     transform: rotate(360deg);
 }
 
-.gitHub>img {
+.gitHub > img {
     height: 25px;
     width: 25px;
 }
@@ -123,7 +124,7 @@ nav {
     border-radius: 5px;
     color: #f0f0f0;
     box-shadow: 5px 5px 8px #505050;
-    width: 150px;
+    width: fit-content;
     text-align: center;
 }
 
@@ -150,8 +151,8 @@ nav {
 
 @media (max-width: 768px) {
     main {
-        margin-right:0;
-        padding: .5rem;
+        margin-right: 0;
+        padding: 0.5rem;
     }
     .main {
         padding: 1rem;
@@ -160,7 +161,7 @@ nav {
     .headline {
         font-size: 2rem;
     }
-    nav>.toggle {
+    nav > .toggle {
         padding-top: 8px;
         top: 0;
         left: 0;
@@ -177,9 +178,9 @@ nav {
         overflow: hidden;
         transition: 0.3s all;
         box-shadow: 0 0 10px #505050;
-        background: linear-gradient( 45deg, rgba(0, 14, 42, 0.9), rgba(41, 0, 29, 0.9));
+        background: linear-gradient(45deg, rgba(0, 14, 42, 0.9), rgba(41, 0, 29, 0.9));
     }
-    nav>.content {
+    nav > .content {
         display: none;
     }
     nav.active {
@@ -191,11 +192,11 @@ nav {
         overflow: visible;
         backdrop-filter: blur(10px);
     }
-    nav.active>.toggle {
+    nav.active > .toggle {
         padding: 1rem;
         height: fit-content;
     }
-    nav.active>.content {
+    nav.active > .content {
         display: flex;
         margin-top: 60px;
         height: calc(100vh - 100px);
@@ -204,7 +205,7 @@ nav {
         display: block !important;
     }
 
-    .interaction-btn>.hireMe{
-        margin: .5rem 1rem;
+    .interaction-btn > .hireMe {
+        margin: 0.5rem 1rem;
     }
 }

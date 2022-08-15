@@ -6,7 +6,11 @@ import "./styles.css";
 const LandingSection = () => {
   return (
     <section id="home" className="main prel fl fl-c fl-d-cl h100vh">
-      <div className="container lhinit fl fl-c fl-d-cl">
+      <div
+        className="container lhinit fl fl-c fl-d-cl"
+        // below margin is temporary
+        style={{ marginTop: 50 }}
+      >
         <div
           className="fl text-center"
           style={{ fontSize: 102, fontWeight: 700 }}
@@ -38,7 +42,8 @@ const LandingSection = () => {
       </div>
       <div
         className="fl fl-c fl-d-cl w100"
-        style={{ fontSize: 24, color: "#666", transform: "translateY(90px)" }}
+        // below translation should be 90px as the margin of the container is removed which is now 50px
+        style={{ fontSize: 24, color: "#666", transform: "translateY(20px)" }}
       >
         <div className="fl fl-c fl-d-cl oscilate">
           <div>Scroll Down</div>

@@ -1,0 +1,63 @@
+#projects .project {
+    position: relative;
+    width: 100%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-bottom: 4rem;
+}
+
+#projects .project .top {
+    transition: all 0.4s ease 0s;
+}
+
+#projects .project .top:hover {
+    transform: scale(0.8) rotate(-16deg);
+    border-radius: 20px;
+    box-shadow: rgb(68 77 136 / 20%) 0px 32px 74px;
+    overflow: hidden;
+}
+
+#projects .project .top img {
+    vertical-align: middle;
+}
+
+#projects .project .bottom {
+    box-sizing: border-box;
+    min-width: 0px;
+    padding-top: 2.125rem;
+}
+
+#projects .project .bottom p {
+    font-size: 0.8125rem;
+    line-height: 1.63;
+    letter-spacing: 1.63px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0.5rem;
+}
+
+#projects .project .bottom h4 {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    font-size: 1.5rem;
+    line-height: 1.42;
+    color: rgb(255, 255, 255);
+}
+
+@media (min-width: 768px) {
+    #projects .project {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (min-width: 992px) {
+    #projects .project {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+}

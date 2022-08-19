@@ -3,8 +3,8 @@ import {
   ContactSection,
   FooterSection,
   LandingSection,
+  ProjectsSection,
 } from "../../components/";
-import { projects } from "../../data";
 
 const Home = () => {
   return (
@@ -44,68 +44,7 @@ const Home = () => {
       {/* Previous version tag */}
 
       <LandingSection />
-
-      <section className="lhinit fl fl-c fl-d-cl">
-        <p
-          style={{
-            fontSize: 18,
-            color: "#999",
-            letterSpacing: 2,
-            paddingTop: 10,
-            fontFamily: "monospace",
-          }}
-        >
-          Project List below is just a sample. [Remember, We're Under
-          Construction]
-        </p>
-        <div className="fl fl-c">
-          {projects.map((project, index) => (
-            <div
-              className="lhinit fl fl-c fl-d-cl p12"
-              key={index}
-              id={project.id}
-            >
-              <div
-                className="fl text-center"
-                style={{
-                  fontSize: 18,
-                  paddingTop: 10,
-                }}
-              >
-                {project.title}
-              </div>
-              <div
-                className="fl text-center"
-                style={{
-                  fontSize: 16,
-                  color: "#999",
-                  paddingTop: 10,
-                }}
-              >
-                {project.description}
-              </div>
-              <div
-                className="fl fl-c text-center fl-ww"
-                style={{
-                  width: 200,
-                  fontSize: 16,
-                  color: "#999",
-                  letterSpacing: 2,
-                  paddingTop: 10,
-                  fontFamily: "monospace",
-                }}
-              >
-                {project.technologies.map((technology, index) => (
-                  <div style={{ marginLeft: 2 }} key={index}>
-                    {technology},{" "}
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
+      <ProjectsSection />
       <ContactSection />
       <FooterSection />
     </main>

@@ -6,6 +6,18 @@ import "./styles.css";
 const LandingSection = () => {
   return (
     <section id="home" className="main prel fl fl-c fl-d-cl h100vh">
+      <p
+        className="text-center pabs t0"
+        style={{
+          marginTop: "8rem",
+          fontSize: 18,
+          color: "#999",
+          letterSpacing: 2,
+          fontFamily: "monospace",
+        }}
+      >
+        We're Under Construction
+      </p>
       <div
         className="container lhinit fl fl-c fl-d-cl"
         // below margin is temporary

@@ -7,14 +7,16 @@
 }
 
 #projects .project .top {
+    border-radius: 10px;
     transition: all 0.4s ease 0s;
+    transform: scale(0.9);
+    overflow: hidden;
 }
 
 #projects .project .top:hover {
-    transform: scale(0.8) rotate(-16deg);
     border-radius: 20px;
     box-shadow: rgb(68 77 136 / 20%) 0px 32px 74px;
-    overflow: hidden;
+    transform: scale(1);
 }
 
 #projects .project .top img {

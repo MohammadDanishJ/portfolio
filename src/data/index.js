@@ -6,7 +6,7 @@ export const projects = [{
     image: 'https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8',
     url: 'https://kubergroup.netlify.app/',
     github: 'https://github.com/KuberGroup',
-    technologies: ['html', 'css', 'javascript', 'react', 'firebase', 'react native']
+    technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Firebase', 'React-Native']
 }, {
     id: 2,
     title: 'Group Workflow',
@@ -15,6 +15,6 @@ export const projects = [{
     image: 'https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8',
     url: 'https://groupworkflow.netlify.app/',
     github: 'https://github.com/MohammadDanishJ/group',
-    technologies: ['html', 'css', 'javascript', 'firebase']
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Firebase']
 }
 ]

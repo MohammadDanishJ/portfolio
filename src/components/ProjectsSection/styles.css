@@ -39,6 +39,10 @@
     margin-bottom: 0.5rem;
 }
 
+#projects .project .bottom p.technologies {
+    text-transform: none;
+}
+
 #projects .project .bottom h4 {
     font-weight: 700;
     letter-spacing: -0.5px;

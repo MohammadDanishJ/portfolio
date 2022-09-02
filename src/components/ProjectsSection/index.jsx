@@ -36,6 +36,9 @@ const ProjectsSection = () => {
               <div className="bottom text-center">
                 <p>{project.type}</p>
                 <h4>{project.title}</h4>
+                <p className="technologies">
+                  {project.technologies.join(", ")}
+                </p>
               </div>
             </div>
           ))}

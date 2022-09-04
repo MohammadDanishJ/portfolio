@@ -14,7 +14,7 @@ const ProjectsSection = () => {
           paddingBottom: 40,
         }}
       >
-        Project List below is just a sample. [Remember, We're Under
+        Project List below may not be accurate. [Remember, We're Under
         Construction]
       </p>
       <div

@@ -27,6 +27,23 @@
     vertical-align: middle;
 }
 
+#projects .project .top .github {
+    background: linear-gradient(45deg, rgb(0, 14, 42), rgb(41, 0, 29));
+    border-radius: 10px 0 0;
+    padding: 0.5rem;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 400;
+    transition: all 0.4s ease 0s;
+    max-width: 150px;
+}
+
+#projects .project .top .github:hover {
+    box-shadow: rgba(226, 227, 236, 0.2) -15px -15px 30px 10px;
+    letter-spacing: 2px;
+    border-radius: 15px 0 0;
+}
+
 #projects .project .bottom {
     box-sizing: border-box;
     min-width: 0px;

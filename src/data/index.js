@@ -16,5 +16,23 @@ export const projects = [{
     url: 'https://groupworkflow.netlify.app/',
     github: 'https://github.com/MohammadDanishJ/group',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Firebase']
+}, {
+    id: 3,
+    title: 'Alone Media',
+    description: 'Social Media Website',
+    type: 'Web',
+    image: 'https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8',
+    url: 'https://alonemedia.ml/',
+    github: '',
+    technologies: ['HTML', 'CSS', 'PHP', 'JavaScript', 'jQuery', 'MySQL']
+}, {
+    id: 4,
+    title: 'CodeHare',
+    description: 'Code/Notes Sharing Website',
+    type: 'Web',
+    image: 'https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8',
+    url: 'https://codehare.tk/',
+    github: '',
+    technologies: ['HTML', 'CSS', 'PHP', 'JavaScript', 'jQuery', 'MySQL']
 }
 ]

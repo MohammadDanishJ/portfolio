@@ -31,12 +31,14 @@ const ProjectsSection = () => {
                     src="https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8"
                     alt=""
                   />
-                  <div className="pabs b0 fl w100">
-                    <div className="w100"></div>
-                    <a className="w100 fl fl-c github" href={project.github}>
-                      GitHub
-                    </a>
-                  </div>
+                  {project.github && (
+                    <div className="pabs b0 fl w100">
+                      <div className="w100"></div>
+                      <a className="w100 fl fl-c github" href={project.github}>
+                        GitHub
+                      </a>
+                    </div>
+                  )}
                 </a>
               </div>
               <div className="bottom text-center">

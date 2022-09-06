@@ -34,5 +34,14 @@ export const projects = [{
     url: 'https://codehare.tk/',
     github: '',
     technologies: ['HTML', 'CSS', 'PHP', 'JavaScript', 'jQuery', 'MySQL']
+}, {
+    id: 5,
+    title: 'Whiteboard',
+    description: 'Online Whiteboard',
+    type: 'Web',
+    image: 'https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8',
+    url: 'https://mohammaddanishj.github.io/whiteboard/',
+    github: 'https://github.com/MohammadDanishJ/whiteboard',
+    technologies: ['HTML', 'CSS', 'JavaScript']
 }
 ]

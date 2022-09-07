@@ -15,9 +15,11 @@
 
 #home .resume-container {
     margin-top: 52px;
+    gap: 2rem;
 }
 
-#home .resume {
+#home .resume,
+#home .contact {
     font-size: 13px;
     font-weight: 700;
     letter-spacing: 1.63px;
@@ -42,7 +44,14 @@
     outline: none !important;
 }
 
-#home .resume:hover {
+#home .contact {
+    background-color: transparent;
+    border: 2px solid rgb(86, 179, 129);
+    color: rgb(86, 179, 129);
+}
+
+#home .resume:hover,
+#home .contact:hover {
     transform: translateY(-10px);
     box-shadow: rgb(3 3 3 / 14%) 0px 32px 54px;
 }

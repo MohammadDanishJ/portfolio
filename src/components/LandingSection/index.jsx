@@ -1,6 +1,7 @@
 import React from "react";
 import { MdArrowBackIosNew } from "react-icons/md";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { BsFillChatFill } from "react-icons/bs";
 import "./styles.css";
 
 const LandingSection = () => {
@@ -41,7 +42,16 @@ const LandingSection = () => {
         >
           Web Developer | Software Engineer | React Developer
         </div>
-        <div className="fl fl-c fl-d-cl resume-container">
+        <div className="fl fl-c resume-container">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="mailto:conatct.mdtechs@gmail.com?subject=Want to Hire. Source: Portfolio&body=Hey Mohd Danish, I reached you from your Portfolio."
+            className="fl fl-c contact cp"
+          >
+            <BsFillChatFill size={16} style={{ marginRight: 6 }} />
+            Contact
+          </a>
           <a
             target="_blank"
             rel="noreferrer"

@@ -24,12 +24,7 @@ const LandingSection = () => {
         // below margin is temporary
         style={{ marginTop: 50 }}
       >
-        <div
-          className="fl text-center"
-          style={{ fontSize: 102, fontWeight: 700 }}
-        >
-          Mohammad Danish
-        </div>
+        <div className="fl text-center main-title">Mohammad Danish</div>
         <div
           className="fl text-center"
           style={{

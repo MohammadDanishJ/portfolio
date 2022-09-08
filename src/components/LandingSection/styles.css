@@ -55,3 +55,27 @@
     transform: translateY(-10px);
     box-shadow: rgb(3 3 3 / 14%) 0px 32px 54px;
 }
+
+#home .container .main-title {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: rgb(255, 255, 255);
+
+    font-size: 102px;
+}
+@media screen and (max-width: 650px) {
+    #home .container .main-title {
+        font-size: 62px;
+    }
+}
+@media screen and (max-width: 350px) {
+    #home .container .main-title {
+        font-size: 42px;
+    }
+    #home .resume,
+    #home .contact {
+        font-size: 10px;
+        padding: 15px 20px;
+    }
+}

@@ -58,11 +58,7 @@ const LandingSection = () => {
           </a>
         </div>
       </div>
-      <div
-        className="fl fl-c fl-d-cl w100"
-        // below translation should be 90px as the margin of the container is removed which is now 50px
-        style={{ fontSize: 24, color: "#666", transform: "translateY(20px)" }}
-      >
+      <div className="fl fl-c fl-d-cl w100 scroll-icon">
         <div className="fl fl-c fl-d-cl oscilate">
           <div>Scroll Down</div>
           <MdArrowBackIosNew

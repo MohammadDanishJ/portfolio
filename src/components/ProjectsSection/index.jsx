@@ -25,10 +25,15 @@ const ProjectsSection = () => {
           {projects.map((project, index) => (
             <div key={index} className="project">
               <div className="top">
+                {console.log(`../../assets/images/projects/${project.image}`)}
                 <a href={project.url}>
                   <img
                     className="w100"
-                    src="https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8"
+                    src={
+                      project.image
+                        ? require(`../../assets/images/projects/${project.image}`)
+                        : `https://images.unsplash.com/photo-1572177812156-58036aae439c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8`
+                    }
                     alt=""
                   />
                   {project.github && (

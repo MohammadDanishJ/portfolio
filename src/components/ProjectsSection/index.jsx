@@ -25,7 +25,6 @@ const ProjectsSection = () => {
           {projects.map((project, index) => (
             <div key={index} className="project">
               <div className="top">
-                {console.log(`../../assets/images/projects/${project.image}`)}
                 <a href={project.url}>
                   <img
                     className="w100"

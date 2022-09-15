@@ -39,7 +39,7 @@ export const projects = [{
     title: 'Whiteboard',
     description: 'Online Whiteboard',
     type: 'Web',
-    image: '',
+    image: 'WhiteboardPC.png',
     url: 'https://mohammaddanishj.github.io/whiteboard/',
     github: 'https://github.com/MohammadDanishJ/whiteboard',
     technologies: ['HTML', 'CSS', 'JavaScript']

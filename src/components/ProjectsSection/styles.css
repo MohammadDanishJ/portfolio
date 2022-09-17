@@ -1,9 +1,12 @@
 #projects .project {
     position: relative;
     width: 100%;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    margin-bottom: 4rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 3rem;
+
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
 }
 
 #projects .project .top {
@@ -75,19 +78,29 @@
     color: rgb(255, 255, 255);
 }
 
-@media (min-width: 768px) {
+/* mobile screen */
+@media (max-width: 768px) {
+    #projects .project {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+        margin-bottom: 4rem;
+    }
+    #projects .project .top {
+        transform: scale(1);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
     #projects .project {
         flex: 0 0 50%;
         max-width: 50%;
         padding-right: 1rem;
         padding-left: 1rem;
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
     }
-}
-
-@media (min-width: 992px) {
-    #projects .project {
-        flex: 0 0 33.33%;
-        max-width: 33.33%;
+    #projects .project .top {
+        transform: scale(0.9);
     }
 }

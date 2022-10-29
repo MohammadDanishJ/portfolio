@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { MdArrowBackIosNew } from "react-icons/md";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { BsFillChatFill } from "react-icons/bs";
 import "./styles.css";
+import Aos from "aos";
 
 const LandingSection = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <section id="home" className="main prel fl fl-c fl-d-cl h100vh">
       <p
@@ -16,6 +21,8 @@ const LandingSection = () => {
           letterSpacing: 2,
           fontFamily: "monospace",
         }}
+        data-aos="fade-down"
+        data-aos-duration="1000"
       >
         We're Under Construction
       </p>
@@ -24,7 +31,13 @@ const LandingSection = () => {
         // below margin is temporary
         style={{ marginTop: 50 }}
       >
-        <div className="fl text-center main-title">Mohammad Danish</div>
+        <div
+          className="fl text-center main-title"
+          data-aos="zoom-out"
+          data-aos-duration="1000"
+        >
+          Mohammad Danish
+        </div>
         <div
           className="fl text-center"
           style={{

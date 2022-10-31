@@ -34,14 +34,6 @@ const ProjectsSection = () => {
                     }
                     alt=""
                   />
-                  {project.github && (
-                    <div className="pabs b0 fl w100">
-                      <div className="w100"></div>
-                      <a className="w100 fl fl-c github" href={project.github}>
-                        GitHub
-                      </a>
-                    </div>
-                  )}
                 </a>
               </div>
               <div className="bottom text-center">
@@ -50,6 +42,19 @@ const ProjectsSection = () => {
                 <p className="technologies">
                   {project.technologies.join(", ")}
                 </p>
+
+                <div className="fl w100 url">
+                  {project.url && (
+                    <a className="w100 fl fl-c live" href={project.url}>
+                      Live
+                    </a>
+                  )}
+                  {project.github && (
+                    <a className="w100 fl fl-c github" href={project.github}>
+                      GitHub
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           ))}

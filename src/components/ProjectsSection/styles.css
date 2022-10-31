@@ -29,27 +29,39 @@
 
 #projects .project:hover .bottom {
     transform: translateY(0.6rem);
+    padding-bottom: 0.6rem;
 }
 
 #projects .project .top img {
     vertical-align: middle;
 }
-
-#projects .project .top .github {
-    background: linear-gradient(45deg, rgb(0, 14, 42), rgb(41, 0, 29));
-    border-radius: 10px 0 0;
+#projects .project .bottom .url {
+    gap: 0.5rem;
+}
+#projects .project .bottom .github,
+#projects .project .bottom .live {
+    border-radius: 8px;
     padding: 0.5rem;
     color: #fff;
     letter-spacing: 1px;
     font-weight: 400;
     transition: all 0.4s ease 0s;
-    max-width: 150px;
+    gap: 5px;
+}
+#projects .project .bottom .github {
+    background-color: transparent;
+    border: 1px solid rgb(73, 95, 239);
+}
+#projects .project .bottom .live {
+    background-color: transparent;
+    border: 1px solid rgb(86, 179, 129);
 }
 
-#projects .project .top .github:hover {
-    box-shadow: rgba(226, 227, 236, 0.2) -15px -15px 30px 10px;
+#projects .project .bottom .github:hover,
+#projects .project .bottom .live:hover {
+    box-shadow: rgba(226, 227, 236, 0.2) 0px 0px 20px 5px;
     letter-spacing: 2px;
-    border-radius: 15px 0 0;
+    border-radius: 15px;
 }
 
 #projects .project .bottom {

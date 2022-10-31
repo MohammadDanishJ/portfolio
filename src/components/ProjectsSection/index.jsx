@@ -35,6 +35,11 @@ const ProjectsSection = () => {
                     alt=""
                   />
                 </a>
+                {project.pageUrl && (
+                  <div className="fallback fl fl-c">
+                    <a href={project.pageUrl}>Detailed View</a>
+                  </div>
+                )}
               </div>
               <div className="bottom text-center">
                 <p>{project.type}</p>

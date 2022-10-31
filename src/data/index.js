@@ -5,6 +5,7 @@ export const projects = [{
     type: 'Web | Desktop | Mobile',
     image: 'KuberHomeChatDemoPC.png',
     url: 'https://kubergroup.netlify.app/',
+    pageUrl: '',
     github: 'https://github.com/KuberGroup',
     technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Firebase', 'React-Native']
 }, {
@@ -14,6 +15,7 @@ export const projects = [{
     type: 'PWA',
     image: 'GroupworkflowHomePC.png',
     url: 'https://groupworkflow.netlify.app/',
+    pageUrl: '',
     github: 'https://github.com/MohammadDanishJ/group',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Firebase']
 }, {
@@ -23,6 +25,7 @@ export const projects = [{
     type: 'Web',
     image: 'AloneHomePC.png',
     url: 'https://alonemedia.ml/',
+    pageUrl: '',
     github: '',
     technologies: ['HTML', 'CSS', 'PHP', 'JavaScript', 'jQuery', 'MySQL']
 }, {
@@ -32,6 +35,7 @@ export const projects = [{
     type: 'Web',
     image: 'CodehareHomePC.png',
     url: 'https://codehare.tk/',
+    pageUrl: '',
     github: '',
     technologies: ['HTML', 'CSS', 'PHP', 'JavaScript', 'jQuery', 'MySQL']
 }, {

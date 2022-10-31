@@ -50,12 +50,22 @@ const ProjectsSection = () => {
 
                 <div className="fl w100 url">
                   {project.url && (
-                    <a className="w100 fl fl-c live" href={project.url}>
+                    <a
+                      className="w100 fl fl-c live"
+                      href={project.url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       Live
                     </a>
                   )}
                   {project.github && (
-                    <a className="w100 fl fl-c github" href={project.github}>
+                    <a
+                      className="w100 fl fl-c github"
+                      href={project.github}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       GitHub
                     </a>
                   )}

@@ -5,18 +5,17 @@ import "./styles.css";
 const ProjectsSection = () => {
   return (
     <section id="projects" className="main prel fl fl-c fl-d-cl">
-      <p
-        style={{
-          fontSize: 18,
-          color: "#999",
-          letterSpacing: 2,
-          fontFamily: "monospace",
-          paddingBottom: 40,
-        }}
-      >
-        Project List below may not be accurate. [Remember, We're Under
-        Construction]
-      </p>
+      <div className="header">
+        <div
+          className="header-title text-center"
+          style={{ fontWeight: 700, letterSpacing: 2 }}
+          data-aos="zoom-out"
+          data-aos-duration="1000"
+        >
+          Projects
+        </div>
+      </div>
+
       <div
         className="container lhinit fl fl-c fl-d-cl"
         style={{ marginRight: -15, marginLeft: -15 }}

@@ -1,12 +1,17 @@
 #projects .project {
     position: relative;
     width: 100%;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding: 1rem;
     margin-bottom: 3rem;
+    border-radius: 10px;
 
     flex: 0 0 33.33%;
     max-width: 33.33%;
+    cursor: default;
+}
+
+#projects .project:hover {
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 #projects .project .top {
@@ -16,13 +21,13 @@
     overflow: hidden;
 }
 
-#projects .project .top:hover {
+#projects .project:hover .top {
     border-radius: 20px;
     box-shadow: rgb(68 77 136 / 20%) 0px 32px 74px;
     transform: scale(1);
 }
 
-#projects .project .top:hover + .bottom {
+#projects .project:hover .bottom {
     transform: translateY(0.6rem);
 }
 
@@ -80,11 +85,14 @@
 
 /* mobile screen */
 @media (max-width: 768px) {
+    .container {
+        padding: 0.5rem;
+    }
     #projects .project {
         flex: 0 0 100%;
         max-width: 100%;
-        padding-right: 0;
-        padding-left: 0;
+        padding-right: 1rem;
+        padding-left: 1rem;
         margin-bottom: 4rem;
     }
     #projects .project .top {

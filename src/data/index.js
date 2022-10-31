@@ -30,7 +30,7 @@ export const projects = [{
     title: 'CodeHare',
     description: 'Code/Notes Sharing Website',
     type: 'Web',
-    image: '',
+    image: 'CodehareHomePC.png',
     url: 'https://codehare.tk/',
     github: '',
     technologies: ['HTML', 'CSS', 'PHP', 'JavaScript', 'jQuery', 'MySQL']

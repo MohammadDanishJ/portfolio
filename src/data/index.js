@@ -12,7 +12,7 @@ export const projects = [{
     title: 'Group Workflow',
     description: 'Chat Web App',
     type: 'PWA',
-    image: '',
+    image: 'GroupworkflowHomePC.png',
     url: 'https://groupworkflow.netlify.app/',
     github: 'https://github.com/MohammadDanishJ/group',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Firebase']
@@ -21,7 +21,7 @@ export const projects = [{
     title: 'Alone Media',
     description: 'Social Media Website',
     type: 'Web',
-    image: '',
+    image: 'AloneHomePC.png',
     url: 'https://alonemedia.ml/',
     github: '',
     technologies: ['HTML', 'CSS', 'PHP', 'JavaScript', 'jQuery', 'MySQL']

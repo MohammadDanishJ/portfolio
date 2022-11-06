@@ -115,8 +115,17 @@
 
 #projects .project .bottom p.technologies {
     text-transform: none;
-    margin-top: 0.4rem;
+    margin: 0.4rem 0.4rem 0.8rem;
     color: rgba(255, 255, 255, 0.5);
+    /* text wrap ellipsis*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: 0.3s all ease;
+}
+
+#projects .project:hover .bottom p.technologies {
+    white-space: normal;
 }
 
 #projects .project .bottom h4 {

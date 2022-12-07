@@ -4,12 +4,14 @@ import {
   FooterSection,
   LandingSection,
   ProjectsSection,
+  SkillsSection,
 } from "../../components/";
 
 const Home = () => {
   return (
     <main>
       <LandingSection />
+      <SkillsSection />
       <ProjectsSection />
       <ContactSection />
       <FooterSection />

@@ -1,5 +1,4 @@
 import React from "react";
-import { projects } from "../../data";
 import "./styles.css";
 
 const SkillsSection = () => {

@@ -4,7 +4,7 @@ import "./styles.css";
 
 const SkillsSection = () => {
   return (
-    <section id="projects" className="main prel fl fl-c fl-d-cl">
+    <section id="skills" className="main prel fl fl-c fl-d-cl">
       <div
         className="prel w100 lhinit fl fl-c fl-d-cl"
         style={{ marginRight: -15, marginLeft: -15 }}

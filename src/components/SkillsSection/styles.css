@@ -1,13 +1,5 @@
-html {
-    overflow-y: scroll;
-    height: 100%;
-    -webkit-overflow-scrolling: touch;
-}
-
-html,
-body {
-    overflow-x: hidden;
-    margin: 0;
+.main#skills {
+    padding-bottom: 0;
 }
 
 .qualifications-container {

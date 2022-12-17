@@ -54,6 +54,18 @@ const SkillsSection = () => {
               <div class="content c-plus-plus"></div>
               <h1>c++</h1>
             </div>
+            <div class="qualification slide">
+              <div class="content java"></div>
+              <h1>Java</h1>
+            </div>
+            <div class="qualification slide">
+              <div class="content spring"></div>
+              <h1>Spring</h1>
+            </div>
+            <div class="qualification slide">
+              <div class="content spring-boot"></div>
+              <h1>Spring Boot</h1>
+            </div>
 
             {/* iter 2  */}
             <div class="qualification slide">
@@ -99,6 +111,18 @@ const SkillsSection = () => {
             <div class="qualification slide">
               <div class="content c-plus-plus"></div>
               <h1>c++</h1>
+            </div>
+            <div class="qualification slide">
+              <div class="content java"></div>
+              <h1>Java</h1>
+            </div>
+            <div class="qualification slide">
+              <div class="content spring"></div>
+              <h1>Spring</h1>
+            </div>
+            <div class="qualification slide">
+              <div class="content spring-boot"></div>
+              <h1>Spring Boot</h1>
             </div>
           </div>
         </div>
@@ -151,6 +175,18 @@ const SkillsSection = () => {
               <div class="content c-plus-plus"></div>
               <h1>c++</h1>
             </div>
+            <div class="qualification slide">
+              <div class="content java"></div>
+              <h1>Java</h1>
+            </div>
+            <div class="qualification slide">
+              <div class="content spring"></div>
+              <h1>Spring</h1>
+            </div>
+            <div class="qualification slide">
+              <div class="content spring-boot"></div>
+              <h1>Spring Boot</h1>
+            </div>
 
             {/* iter 2  */}
             <div class="qualification slide">
@@ -196,6 +232,18 @@ const SkillsSection = () => {
             <div class="qualification slide">
               <div class="content c-plus-plus"></div>
               <h1>c++</h1>
+            </div>
+            <div class="qualification slide">
+              <div class="content java"></div>
+              <h1>Java</h1>
+            </div>
+            <div class="qualification slide">
+              <div class="content spring"></div>
+              <h1>Spring</h1>
+            </div>
+            <div class="qualification slide">
+              <div class="content spring-boot"></div>
+              <h1>Spring Boot</h1>
             </div>
           </div>
         </div>

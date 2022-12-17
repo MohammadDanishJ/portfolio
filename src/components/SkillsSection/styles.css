@@ -68,6 +68,15 @@
 .qualifications-container .qualification .content.php {
     background: rgb(18, 12, 65) url(../../assets/images/img/php.png);
 }
+.qualifications-container .qualification .content.java {
+    background: rgb(18, 12, 65) url(../../assets/images/img/java.png);
+}
+.qualifications-container .qualification .content.spring {
+    background: rgb(18, 12, 65) url(../../assets/images/img/spring.png);
+}
+.qualifications-container .qualification .content.spring-boot {
+    background: rgb(18, 12, 65) url(../../assets/images/img/spring-boot.png);
+}
 
 .qualifications-container .qualification .content {
     background-position: center !important;

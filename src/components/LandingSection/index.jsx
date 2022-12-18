@@ -4,6 +4,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import { BsFillChatFill } from "react-icons/bs";
 import "./styles.css";
 import Aos from "aos";
+import { socialLinks } from "../../data";
 
 const LandingSection = () => {
   useEffect(() => {
@@ -54,7 +55,7 @@ const LandingSection = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="mailto:mdtechs.contact@gmail.com?subject=Want to Hire. Source: Portfolio&body=Hey Mohd Danish, I reached you from your Portfolio."
+            href={`mailto:${socialLinks.gmail}?subject=Want to Hire. Source: Portfolio&body=Hey Mohd Danish, I reached you from your Portfolio.`}
             className="fl fl-c contact cp"
           >
             <BsFillChatFill size={16} style={{ marginRight: 6 }} />

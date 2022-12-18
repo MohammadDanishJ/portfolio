@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles.css";
 import { BsFillChatFill } from "react-icons/bs";
+import { socialLinks } from "../../data";
 const ContactSection = () => {
   return (
     <section id="contact" className="main prel fl fl-c">
@@ -18,7 +19,7 @@ const ContactSection = () => {
         <div>
           <a
             className="button"
-            href="mailto:mdtechs.contact@gmail.com?subject=Want to Hire. Source: Portfolio&body=Hey Mohd Danish, I reached you from your Portfolio."
+            href={`mailto:${socialLinks.gmail}?subject=Want to Hire. Source: Portfolio&body=Hey Mohd Danish, I reached you from your Portfolio.`}
           >
             <BsFillChatFill size={16} style={{ marginRight: 6 }} /> Lets Talk
             Now

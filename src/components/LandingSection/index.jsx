@@ -54,7 +54,7 @@ const LandingSection = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="mailto:conatct.mdtechs@gmail.com?subject=Want to Hire. Source: Portfolio&body=Hey Mohd Danish, I reached you from your Portfolio."
+            href="mailto:mdtechs.contact@gmail.com?subject=Want to Hire. Source: Portfolio&body=Hey Mohd Danish, I reached you from your Portfolio."
             className="fl fl-c contact cp"
           >
             <BsFillChatFill size={16} style={{ marginRight: 6 }} />

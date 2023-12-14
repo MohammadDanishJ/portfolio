@@ -65,7 +65,7 @@ const LandingSection = () => {
             target="_blank"
             rel="noreferrer"
             // href="https://www.canva.com/design/DAFG27PZYwA/khr6booLHNpaUWIh7IJoeA/view"
-            href={require("../../assets/doc/Resume.pdf")}
+            href={require("../../assets/doc/Resume-Mohd_Danish.pdf")}
             className="fl fl-c resume cp"
           >
             Resume <FaExternalLinkAlt size={13} style={{ marginLeft: 6 }} />

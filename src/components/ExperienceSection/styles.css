@@ -1,0 +1,16 @@
+.vertical-timeline {
+    padding-top: 14rem;
+}
+.vertical-timeline-element--work.vertical-timeline-element:first-child > .vertical-timeline-element-content {
+    background: rgb(9, 6, 31);
+    color: #bbb;
+}
+.vertical-timeline-element--work.vertical-timeline-element > .vertical-timeline-element-content {
+    color: #333;
+}
+.vertical-timeline-element--education.vertical-timeline-element > .vertical-timeline-element-content {
+    color: #555;
+}
+.vertical-timeline-element-date {
+    color: #bbb;
+}

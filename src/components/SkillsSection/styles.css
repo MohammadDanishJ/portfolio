@@ -1,157 +1,164 @@
 .main#skills {
-    padding-bottom: 0;
+  padding-bottom: 0;
 }
 
 .qualifications-container {
-    display: flex;
-    user-select: none;
-    flex-wrap: nowrap;
-    background-color: rgb(9, 6, 31);
+  display: flex;
+  user-select: none;
+  flex-wrap: nowrap;
+  background-color: rgb(9, 6, 31);
 }
 
 .qualifications-container .qualification {
-    position: relative;
-    height: fit-content;
-    background-color: rgb(9, 6, 31);
-    padding: 1rem.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
+  position: relative;
+  height: fit-content;
+  background-color: rgb(9, 6, 31);
+  padding: 1rem.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
 }
 
 .qualifications-container .qualification .content {
-    height: 45px;
-    width: 45px;
-    border-radius: 15px;
-    background-size: cover;
-    background-position: center;
-    background-color: rgb(18, 12, 65);
+  height: 45px;
+  width: 45px;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(18, 12, 65);
 }
 
 .qualifications-container .qualification h1 {
-    font-size: 20px;
-    text-transform: uppercase;
-    margin-left: 0.5rem;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-left: 0.5rem;
 }
 
 .qualifications-container .qualification .content.html {
-    background: rgb(18, 12, 65) url(../../assets/images/img/html.png);
+  background: rgb(18, 12, 65) url(../../assets/images/img/html.png);
 }
 .qualifications-container .qualification .content.css {
-    background: rgb(18, 12, 65) url(../../assets/images/img/css.png);
+  background: rgb(18, 12, 65) url(../../assets/images/img/css.png);
 }
 .qualifications-container .qualification .content.javascript {
-    background: rgb(18, 12, 65) url(../../assets/images/img/js.png);
+  background: rgb(18, 12, 65) url(../../assets/images/img/js.png);
 }
 .qualifications-container .qualification .content.bootstrap {
-    background: rgb(18, 12, 65) url(../../assets/images/img/bootstrap.png);
+  background: rgb(18, 12, 65) url(../../assets/images/img/bootstrap.png);
 }
 .qualifications-container .qualification .content.react {
-    background: rgb(18, 12, 65) url(../../assets/images/img/react.png);
+  background: rgb(18, 12, 65) url(../../assets/images/img/react.png);
 }
 .qualifications-container .qualification .content.c-plus-plus {
-    background: rgb(18, 12, 65) url(../../assets/images/img/c-plus-plus.png);
+  background: rgb(18, 12, 65) url(../../assets/images/img/c-plus-plus.png);
 }
 .qualifications-container .qualification .content.firebase {
-    background: rgb(18, 12, 65) url(../../assets/images/img/firebase.png);
+  background: rgb(18, 12, 65) url(../../assets/images/img/firebase.png);
 }
 .qualifications-container .qualification .content.git {
-    background: rgb(18, 12, 65) url(../../assets/images/img/git.png);
+  background: rgb(18, 12, 65) url(../../assets/images/img/git.png);
 }
 .qualifications-container .qualification .content.jquery {
-    background: rgb(18, 12, 65) url(../../assets/images/img/jquery.png);
+  background: rgb(18, 12, 65) url(../../assets/images/img/jquery.png);
 }
 .qualifications-container .qualification .content.mysql {
-    background: rgb(18, 12, 65) url(../../assets/images/img/mysql.png);
+  background: rgb(18, 12, 65) url(../../assets/images/img/mysql.png);
 }
 .qualifications-container .qualification .content.php {
-    background: rgb(18, 12, 65) url(../../assets/images/img/php.png);
+  background: rgb(18, 12, 65) url(../../assets/images/img/php.png);
 }
 .qualifications-container .qualification .content.java {
-    background: rgb(18, 12, 65) url(../../assets/images/img/java.png);
+  background: rgb(18, 12, 65) url(../../assets/images/img/java.png);
 }
 .qualifications-container .qualification .content.spring {
-    background: rgb(18, 12, 65) url(../../assets/images/img/spring.png);
+  background: rgb(18, 12, 65) url(../../assets/images/img/spring.png);
 }
 .qualifications-container .qualification .content.spring-boot {
-    background: rgb(18, 12, 65) url(../../assets/images/img/spring-boot.png);
+  background: rgb(18, 12, 65) url(../../assets/images/img/spring-boot.png);
 }
 
 .qualifications-container .qualification .content {
-    background-position: center !important;
-    background-size: 90% !important;
-    /* background-size: 66px !important; */
-    background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 90% !important;
+  /* background-size: 66px !important; */
+  background-repeat: no-repeat !important;
 }
 
 @-webkit-keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(0);
+  }
 
-    100% {
-        transform: translateX(calc(-250px * 11));
-    }
+  100% {
+    transform: translateX(calc(-250px * 11));
+  }
 }
 
 @keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(0);
+  }
 
-    100% {
-        transform: translateX(calc(-250px * 11));
-    }
+  100% {
+    transform: translateX(calc(-250px * 11));
+  }
 }
 
 @-webkit-keyframes scroll-reverse {
-    0% {
-        transform: translateX(calc(-250px * 11));
-    }
+  0% {
+    transform: translateX(calc(-250px * 11));
+  }
 
-    100% {
-        transform: translateX(0);
-    }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes scroll-reverse {
-    0% {
-        transform: translateX(calc(-250px * 11));
-    }
+  0% {
+    transform: translateX(calc(-250px * 11));
+  }
 
-    100% {
-        transform: translateX(0);
-    }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .slider {
-    height: 100px;
-    /* margin: auto; */
-    overflow: hidden;
-    position: relative;
-    width: 100%;
+  height: 100px;
+  /* margin: auto; */
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
 .slider .slide-track {
-    -webkit-animation: scroll 50s linear infinite;
-    animation: scroll 50s linear infinite;
-    display: flex;
-    width: calc(250px * 22);
+  -webkit-animation: scroll 50s linear infinite;
+  animation: scroll 50s linear infinite;
+  display: flex;
+  width: calc(250px * 22);
+}
+
+/* On hover no scroll */
+.slider .slide-track:hover,
+.slider .slide-track.slide-reverse:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 .slider .slide-track.slide-reverse {
-    -webkit-animation: scroll-reverse 50s linear infinite;
-    animation: scroll-reverse 50s linear infinite;
-    display: flex;
-    flex-direction: row-reverse;
-    width: calc(250px * 22);
+  -webkit-animation: scroll-reverse 50s linear infinite;
+  animation: scroll-reverse 50s linear infinite;
+  display: flex;
+  flex-direction: row-reverse;
+  width: calc(250px * 22);
 }
 
 .slider .slide {
-    height: 100px;
-    width: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

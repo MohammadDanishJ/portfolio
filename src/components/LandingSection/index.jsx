@@ -4,6 +4,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import { BsFillChatFill } from "react-icons/bs";
 import "./styles.css";
 import Aos from "aos";
+import { socialLinks } from "../../data";
 
 const LandingSection = () => {
   useEffect(() => {
@@ -54,7 +55,7 @@ const LandingSection = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="mailto:conatct.mdtechs@gmail.com?subject=Want to Hire. Source: Portfolio&body=Hey Mohd Danish, I reached you from your Portfolio."
+            href={`mailto:${socialLinks.gmail}?subject=Want to Hire. Source: Portfolio&body=Hey Mohd Danish, I reached you from your Portfolio.`}
             className="fl fl-c contact cp"
           >
             <BsFillChatFill size={16} style={{ marginRight: 6 }} />
@@ -64,7 +65,7 @@ const LandingSection = () => {
             target="_blank"
             rel="noreferrer"
             // href="https://www.canva.com/design/DAFG27PZYwA/khr6booLHNpaUWIh7IJoeA/view"
-            href={require("../../assets/doc/Resume.pdf")}
+            href={require("../../assets/doc/Resume-Mohd_Danish.pdf")}
             className="fl fl-c resume cp"
           >
             Resume <FaExternalLinkAlt size={13} style={{ marginLeft: 6 }} />

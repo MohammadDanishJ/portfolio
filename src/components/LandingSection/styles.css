@@ -1,4 +1,5 @@
 .oscilate {
+    user-select: none;
     animation: oscilate 4s linear infinite;
 }
 @keyframes oscilate {

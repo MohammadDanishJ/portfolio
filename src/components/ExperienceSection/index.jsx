@@ -32,7 +32,7 @@ const ExperienceSection = () => {
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="Jan 2023 - Sep 2023"
-        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+        iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
         icon={<MdOutlineWorkOutline />}
       >
         <h3 className="vertical-timeline-element-title">

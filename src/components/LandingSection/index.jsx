@@ -11,6 +11,9 @@ const LandingSection = () => {
     Aos.init({ duration: 2000 });
   }, []);
 
+  const scrollDown = () =>
+    window.scrollBy({ top: 650, left: 0, behavior: "smooth" });
+
   return (
     <section id="home" className="main prel fl fl-c fl-d-cl h100vh">
       <p
@@ -72,7 +75,8 @@ const LandingSection = () => {
           </a>
         </div>
       </div>
-      <div className="fl fl-c fl-d-cl w100 scroll-icon">
+      {/* scroll down */}
+      <div className="fl fl-c fl-d-cl w100 scroll-icon cp" onClick={scrollDown}>
         <div className="fl fl-c fl-d-cl oscilate">
           <div>Scroll Down</div>
           <MdArrowBackIosNew

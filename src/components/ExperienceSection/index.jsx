@@ -15,7 +15,24 @@ const ExperienceSection = () => {
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-        date="Sep 2023 - present"
+        date="Mar 2026 - present"
+        iconStyle={{ background: "rgb(24, 184, 139)", color: "#fff" }}
+        icon={<MdOutlineWorkOutline />}
+      >
+        <h3 className="vertical-timeline-element-title">Senior Software Engineer</h3>
+        <h4 className="vertical-timeline-element-subtitle">
+          Nucleus Software Exports Limited, Noida
+        </h4>
+        <p>
+          Development and Support for Customer Acquisition System and Lending
+          Management Sytem for ICICI Bank.
+        </p>
+      </VerticalTimelineElement>
+      
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+        date="Sep 2023 - Mar 2026"
         iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         icon={<MdOutlineWorkOutline />}
       >
@@ -75,9 +92,9 @@ const ExperienceSection = () => {
         icon={<MdOutlineSchool />}
       >
         <h3 className="vertical-timeline-element-title">Intermediate</h3>
-        <h4 className="vertical-timeline-element-subtitle">
+        {/* <h4 className="vertical-timeline-element-subtitle">
           Bright Way Inter College, Lucknow
-        </h4>
+        </h4> */}
         <p>Percentage: 86%</p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
@@ -87,9 +104,9 @@ const ExperienceSection = () => {
         icon={<MdOutlineSchool />}
       >
         <h3 className="vertical-timeline-element-title">High School</h3>
-        <h4 className="vertical-timeline-element-subtitle">
+        {/* <h4 className="vertical-timeline-element-subtitle">
           Bright Way Inter College, Lucknow
-        </h4>
+        </h4> */}
         <p>CGPA: 8.6</p>
       </VerticalTimelineElement>
 

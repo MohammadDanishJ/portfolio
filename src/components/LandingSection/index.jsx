@@ -52,7 +52,7 @@ const LandingSection = () => {
             fontFamily: "monospace",
           }}
         >
-          Web Developer | Software Engineer | React Developer
+          Web Developer | Software Engineer | Java Developer
         </div>
         <div className="fl fl-c resume-container">
           <a
@@ -68,7 +68,7 @@ const LandingSection = () => {
             target="_blank"
             rel="noreferrer"
             // href="https://www.canva.com/design/DAFG27PZYwA/khr6booLHNpaUWIh7IJoeA/view"
-            href={require("../../assets/doc/Mohd_Danish_Software_Engineer_Resume.pdf")}
+            href={require("../../assets/doc/Mohd_Danish_Senior_Software_Engineer_Resume.pdf")}
             className="fl fl-c resume cp"
           >
             Resume <FaExternalLinkAlt size={13} style={{ marginLeft: 6 }} />

@@ -63,7 +63,7 @@ export const projects = [
 ];
 
 export const socialLinks = {
-  gmail: "mdtechs.contact@gmail.com",
+  gmail: "mohddanish8299@gmail.com",
   github: "https://github.com/MohammadDanishJ",
   instagram: "https://www.instagram.com/mohammaddanishj/",
   linkedin: "https://www.linkedin.com/in/mohammaddanishj/",

@@ -78,7 +78,7 @@ const LandingSection = () => {
       {/* scroll down */}
       <div className="fl fl-c fl-d-cl w100 scroll-icon cp" onClick={scrollDown}>
         <div className="fl fl-c fl-d-cl oscilate">
-          <div>Scroll Down</div>
+          {/* <div>Scroll Down</div> */}
           <MdArrowBackIosNew
             style={{ transform: "rotate(-90deg)" }}
             size={24}

@@ -82,16 +82,16 @@
   position: relative;
   width: var(--card-width);
   box-sizing: border-box;
-  background: #fff;
-  color: #333;
+  background: #ffffff09;
+  color: #cbcbcb;
   border-radius: 8px;
   padding: 1.2rem 1.5rem;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-.timeline-card--education {
+/* .timeline-card--education {
   color: #555;
-}
+} */
 
 .timeline-card--highlight {
   background: rgb(9, 6, 31);
@@ -149,12 +149,14 @@
   font-weight: 500;
   opacity: 0.85;
   margin: 0 0 0.5rem;
+  color: #999;
 }
 
 .timeline-description {
   font-size: 0.9rem;
   margin: 0;
   line-height: 1.5;
+  color: #999;
 }
 
 .timeline-text-marker {

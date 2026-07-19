@@ -9,7 +9,7 @@ const TimelineNode = React.forwardRef(({ entry, side }, iconRef) => {
   return (
     <div className={`timeline-node timeline-node--${side}`}>
       <div
-        className="timeline-icon"
+        className="timeline-icon fl fl-c pabs t0"
         ref={iconRef}
         style={{ background: entry.iconColor }}
       >
@@ -23,7 +23,7 @@ const TimelineNode = React.forwardRef(({ entry, side }, iconRef) => {
         </span>
       ) : (
         <div
-          className={`timeline-card timeline-card--${entry.type}${
+          className={`prel timeline-card timeline-card--${entry.type}${
             entry.highlight ? " timeline-card--highlight" : ""
           }`}
           style={{ "--arrow-color": entry.iconColor }}

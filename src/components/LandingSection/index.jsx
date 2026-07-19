@@ -1,35 +1,71 @@
 import React, { useEffect } from "react";
 import { MdArrowBackIosNew } from "react-icons/md";
-import { FaExternalLinkAlt } from "react-icons/fa";
-import { BsFillChatFill } from "react-icons/bs";
-import "./styles.css";
 import Aos from "aos";
+import "./styles.css";
 import { socialLinks } from "../../data";
+import landingData from "../../data/landingData";
+import resumeFile from "../../assets/doc/resume.pdf";
+
+
+const fileMap = {
+  resume: resumeFile,
+};
+
+const CtaButton = ({ item }) => {
+  const Icon = item.icon;
+  let href = "#";
+
+  if (item.type === "mailto") {
+    href = `mailto:${socialLinks.gmail}?subject=${encodeURIComponent(
+      item.subject
+    )}&body=${encodeURIComponent(item.body)}`;
+  } else if (item.type === "file") {
+    href = fileMap[item.id];
+  } else if (item.type === "external") {
+    href = item.href;
+  }
+
+  return (
+    <a target="_blank" rel="noreferrer" href={href} download={item.type === "file" ? item.fileName : undefined} className={`fl fl-c ${item.id} cp`}>
+      {item.iconPosition === "left" && Icon && (
+        <Icon size={16} style={{ marginRight: 6 }} />
+      )}
+      {item.label}
+      {item.iconPosition === "right" && Icon && (
+        <Icon size={13} style={{ marginLeft: 6 }} />
+      )}
+    </a>
+  );
+};
 
 const LandingSection = () => {
+  const { underConstruction, name, roles, scrollAmount, aos, cta } = landingData;
+
   useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
+    Aos.init({ duration: aos.duration });
+  }, [aos.duration]);
 
   const scrollDown = () =>
-    window.scrollBy({ top: 650, left: 0, behavior: "smooth" });
+    window.scrollBy({ top: scrollAmount, left: 0, behavior: "smooth" });
 
   return (
     <section id="home" className="main prel fl fl-c fl-d-cl h100vh">
-      <p
-        className="text-center pabs t0"
-        style={{
-          marginTop: "8rem",
-          fontSize: 18,
-          color: "#999",
-          letterSpacing: 2,
-          fontFamily: "monospace",
-        }}
-        data-aos="fade-down"
-        data-aos-duration="1000"
-      >
-        We're Under Construction
-      </p>
+      {underConstruction.show && (
+        <p
+          className="text-center pabs t0"
+          style={{
+            marginTop: "8rem",
+            fontSize: 18,
+            color: "#999",
+            letterSpacing: 2,
+            fontFamily: "monospace",
+          }}
+          data-aos="fade-down"
+          data-aos-duration={aos.fadeDownDuration}
+        >
+          {underConstruction.text}
+        </p>
+      )}
       <div
         className="container lhinit fl fl-c fl-d-cl"
         // below margin is temporary
@@ -38,9 +74,9 @@ const LandingSection = () => {
         <div
           className="fl text-center main-title"
           data-aos="zoom-out"
-          data-aos-duration="1000"
+          data-aos-duration={aos.zoomOutDuration}
         >
-          Mohammad Danish
+          {name}
         </div>
         <div
           className="fl text-center"
@@ -52,37 +88,19 @@ const LandingSection = () => {
             fontFamily: "monospace",
           }}
         >
-          Web Developer | Software Engineer | Java Developer
+          {roles.join(" | ")}
         </div>
         <div className="fl fl-c resume-container">
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href={`mailto:${socialLinks.gmail}?subject=Want to Hire. Source: Portfolio&body=Hey Mohd Danish, I reached you from your Portfolio.`}
-            className="fl fl-c contact cp"
-          >
-            <BsFillChatFill size={16} style={{ marginRight: 6 }} />
-            Contact
-          </a>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            // href="https://www.canva.com/design/DAFG27PZYwA/khr6booLHNpaUWIh7IJoeA/view"
-            href={require("../../assets/doc/Mohd_Danish_Senior_Software_Engineer_Resume.pdf")}
-            className="fl fl-c resume cp"
-          >
-            Resume <FaExternalLinkAlt size={13} style={{ marginLeft: 6 }} />
-          </a>
+          {cta.map((item) => (
+            <CtaButton key={item.id} item={item} />
+          ))}
         </div>
       </div>
+
       {/* scroll down */}
       <div className="fl fl-c fl-d-cl w100 scroll-icon cp" onClick={scrollDown}>
         <div className="fl fl-c fl-d-cl oscilate">
-          {/* <div>Scroll Down</div> */}
-          <MdArrowBackIosNew
-            style={{ transform: "rotate(-90deg)" }}
-            size={24}
-          />
+          <MdArrowBackIosNew style={{ transform: "rotate(-90deg)" }} size={24} />
           <MdArrowBackIosNew
             style={{ transform: "rotate(-90deg) translateX(14px)" }}
             size={24}

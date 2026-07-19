@@ -1,7 +1,29 @@
-import React from "react";
+import React, { useMemo } from "react";
+import skillsData from "../../data/SkilldData";
 import "./styles.css";
 
+const SkillTrack = ({ skills, count, reverse }) => (
+  <div
+    className={`qualifications-container slide-track${reverse ? " slide-reverse" : ""}`}
+    style={{ "--skill-count": count }}
+  >
+    {skills.map((skill, index) => (
+      <div className="qualification slide" key={`${skill.id}-${index}`}>
+        <div
+          className="content"
+          style={{ backgroundImage: `url(${skill.icon})` }}
+        />
+        <h1>{skill.name}</h1>
+      </div>
+    ))}
+  </div>
+);
+
 const SkillsSection = () => {
+  // Duplicate once for a seamless loop; memoized so it isn't rebuilt every render
+  const duplicatedSkills = useMemo(() => [...skillsData, ...skillsData], []);
+  const count = skillsData.length;
+
   return (
     <section id="skills" className="main prel fl fl-c fl-d-cl">
       <div
@@ -9,243 +31,10 @@ const SkillsSection = () => {
         style={{ marginRight: -15, marginLeft: -15 }}
       >
         <div className="slider">
-          <div className="qualifications-container slide-track">
-            <div className="qualification slide">
-              <div className="content html"></div>
-              <h1>html</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content css"></div>
-              <h1>css</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content javascript"></div>
-              <h1>javascript</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content bootstrap"></div>
-              <h1>bootstrap</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content react"></div>
-              <h1>react</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content firebase"></div>
-              <h1>firebase</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content git"></div>
-              <h1>git</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content jquery"></div>
-              <h1>jquery</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content php"></div>
-              <h1>php</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content mysql"></div>
-              <h1>mysql</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content c-plus-plus"></div>
-              <h1>c++</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content java"></div>
-              <h1>Java</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content spring"></div>
-              <h1>Spring</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content spring-boot"></div>
-              <h1>Spring Boot</h1>
-            </div>
-
-            {/* iter 2  */}
-            <div className="qualification slide">
-              <div className="content html"></div>
-              <h1>html</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content css"></div>
-              <h1>css</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content javascript"></div>
-              <h1>javascript</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content bootstrap"></div>
-              <h1>bootstrap</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content react"></div>
-              <h1>react</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content firebase"></div>
-              <h1>firebase</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content git"></div>
-              <h1>git</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content jquery"></div>
-              <h1>jquery</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content php"></div>
-              <h1>php</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content mysql"></div>
-              <h1>mysql</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content c-plus-plus"></div>
-              <h1>c++</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content java"></div>
-              <h1>Java</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content spring"></div>
-              <h1>Spring</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content spring-boot"></div>
-              <h1>Spring Boot</h1>
-            </div>
-          </div>
+          <SkillTrack skills={duplicatedSkills} count={count} />
         </div>
-
-        {/* reverse */}
-
         <div className="slider">
-          <div className="qualifications-container slide-track slide-reverse">
-            <div className="qualification slide">
-              <div className="content html"></div>
-              <h1>html</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content css"></div>
-              <h1>css</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content javascript"></div>
-              <h1>javascript</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content bootstrap"></div>
-              <h1>bootstrap</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content react"></div>
-              <h1>react</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content firebase"></div>
-              <h1>firebase</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content git"></div>
-              <h1>git</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content jquery"></div>
-              <h1>jquery</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content php"></div>
-              <h1>php</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content mysql"></div>
-              <h1>mysql</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content c-plus-plus"></div>
-              <h1>c++</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content java"></div>
-              <h1>Java</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content spring"></div>
-              <h1>Spring</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content spring-boot"></div>
-              <h1>Spring Boot</h1>
-            </div>
-
-            {/* iter 2  */}
-            <div className="qualification slide">
-              <div className="content html"></div>
-              <h1>html</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content css"></div>
-              <h1>css</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content javascript"></div>
-              <h1>javascript</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content bootstrap"></div>
-              <h1>bootstrap</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content react"></div>
-              <h1>react</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content firebase"></div>
-              <h1>firebase</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content git"></div>
-              <h1>git</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content jquery"></div>
-              <h1>jquery</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content php"></div>
-              <h1>php</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content mysql"></div>
-              <h1>mysql</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content c-plus-plus"></div>
-              <h1>c++</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content java"></div>
-              <h1>Java</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content spring"></div>
-              <h1>Spring</h1>
-            </div>
-            <div className="qualification slide">
-              <div className="content spring-boot"></div>
-              <h1>Spring Boot</h1>
-            </div>
-          </div>
+          <SkillTrack skills={duplicatedSkills} count={count} reverse />
         </div>
       </div>
     </section>

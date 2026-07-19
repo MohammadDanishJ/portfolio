@@ -9,7 +9,7 @@ const landingData = {
   },
 
   name: "Mohammad Danish",
-  roles: ["Web Developer", "Software Engineer", "Java Developer"],
+  roles: [ "Java Developer", "I make servers hum and data behave 🛠️📊"],
 
   scrollAmount: 650, // px scrolled on scroll-down click
 

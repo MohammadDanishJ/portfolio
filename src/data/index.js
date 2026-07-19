@@ -34,9 +34,9 @@ export const projects = [
     description: "Social Media Website",
     type: "Web",
     image: "AloneHomePC.png",
-    url: "https://alonemedia.ml/",
+    url: "",
     pageUrl: "",
-    github: "",
+    github: "https://github.com/MohammadDanishJ/Alone",
     technologies: ["HTML", "CSS", "PHP", "JavaScript", "jQuery", "MySQL"],
   },
   {
@@ -45,9 +45,9 @@ export const projects = [
     description: "Code/Notes Sharing Website",
     type: "Web",
     image: "CodehareHomePC.png",
-    url: "https://codehare.tk/",
+    url: "",
     pageUrl: "",
-    github: "",
+    github: "https://github.com/MohammadDanishJ/CodeHare",
     technologies: ["HTML", "CSS", "PHP", "JavaScript", "jQuery", "MySQL"],
   },
   {

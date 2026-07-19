@@ -7,7 +7,7 @@ const timelineData = [
   {
   id: "senior-se",
   type: "work",
-  date: "Mar 2026 - present",
+  date: "Apr 2026 - present",
   title: "Senior Software Engineer",
   subtitle: "Nucleus Software Exports Limited, Noida",
   description:
@@ -20,7 +20,7 @@ const timelineData = [
   {
     id: "se",
     type: "work",
-    date: "Sep 2023 - Mar 2026",
+    date: "Oct 2023 - Mar 2026",
     title: "Software Engineer",
     subtitle: "Nucleus Software Exports Limited, Noida",
     description:

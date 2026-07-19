@@ -1,122 +1,103 @@
-import React from "react";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
-import { MdOutlineWorkOutline, MdOutlineSchool } from "react-icons/md";
-import { LuBaby } from "react-icons/lu";
-import { TbError404Off } from "react-icons/tb";
+import React, { useRef, useState, useLayoutEffect, useCallback } from "react";
+import timelineData from "../../data/timelineData";
 import "./styles.css";
 
-const ExperienceSection = () => {
+const TimelineNode = React.forwardRef(({ entry, side }, iconRef) => {
+  const Icon = entry.icon;
+  const asText = entry.type === "marker" && entry.display === "text";
+
   return (
-    <VerticalTimeline>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-        date="Mar 2026 - present"
-        iconStyle={{ background: "rgb(24, 184, 139)", color: "#fff" }}
-        icon={<MdOutlineWorkOutline />}
+    <div className={`timeline-node timeline-node--${side}`}>
+      <div
+        className="timeline-icon"
+        ref={iconRef}
+        style={{ background: entry.iconColor }}
       >
-        <h3 className="vertical-timeline-element-title">Senior Software Engineer</h3>
-        <h4 className="vertical-timeline-element-subtitle">
-          Nucleus Software Exports Limited, Noida
-        </h4>
-        <p>
-          Development and Support for Customer Acquisition System and Lending
-          Management Sytem for ICICI Bank.
-        </p>
-      </VerticalTimelineElement>
-      
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-        date="Sep 2023 - Mar 2026"
-        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-        icon={<MdOutlineWorkOutline />}
-      >
-        <h3 className="vertical-timeline-element-title">Software Engineer</h3>
-        <h4 className="vertical-timeline-element-subtitle">
-          Nucleus Software Exports Limited, Noida
-        </h4>
-        <p>
-          Development and Support for Customer Acquisition System and Lending
-          Management Sytem for ICICI Bank.
-        </p>
-      </VerticalTimelineElement>
+        {Icon && <Icon />}
+      </div>
 
-      <VerticalTimelineElement
-        className="vertical-timeline-element--work"
-        date="Jan 2023 - Sep 2023"
-        iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-        icon={<MdOutlineWorkOutline />}
-      >
-        <h3 className="vertical-timeline-element-title">
-          Assistant Software Engineer
-        </h3>
-        <h4 className="vertical-timeline-element-subtitle">
-          Nucleus Software Exports Limited, Noida
-        </h4>
-        <p>
-          Development and Support for Customer Acquisition System and Lending
-          Management Sytem for ICICI Bank
-        </p>
-      </VerticalTimelineElement>
-
-      <VerticalTimelineElement
-        className="vertical-timeline-element--education"
-        date="2019 - 2023"
-        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-        icon={<MdOutlineSchool />}
-      >
-        <h3 className="vertical-timeline-element-title">
-          Btech Hons. (Computer Science and Engineering)
-        </h3>
-        <h4 className="vertical-timeline-element-subtitle">
-          Integral University, Lucknow
-        </h4>
-        <p>Grade: 8.85</p>
-      </VerticalTimelineElement>
-
-      <VerticalTimelineElement
-        iconStyle={{ background: "#cc0000", color: "#fff" }}
-        date="2017 - 2019"
-        icon={<TbError404Off />}
-      />
-
-      <VerticalTimelineElement
-        className="vertical-timeline-element--education"
-        date="2016 - 2017"
-        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-        icon={<MdOutlineSchool />}
-      >
-        <h3 className="vertical-timeline-element-title">Intermediate</h3>
-        {/* <h4 className="vertical-timeline-element-subtitle">
-          Bright Way Inter College, Lucknow
-        </h4> */}
-        <p>Percentage: 86%</p>
-      </VerticalTimelineElement>
-      <VerticalTimelineElement
-        className="vertical-timeline-element--education"
-        date="2014 - 2015"
-        iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-        icon={<MdOutlineSchool />}
-      >
-        <h3 className="vertical-timeline-element-title">High School</h3>
-        {/* <h4 className="vertical-timeline-element-subtitle">
-          Bright Way Inter College, Lucknow
-        </h4> */}
-        <p>CGPA: 8.6</p>
-      </VerticalTimelineElement>
-
-      <VerticalTimelineElement
-        iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
-        icon={<LuBaby />}
-        date="Jan 2001"
-      />
-    </VerticalTimeline>
+      {asText ? (
+        <span className="timeline-text-marker">
+          {entry.date}
+          {entry.title && ` — ${entry.title}`}
+        </span>
+      ) : (
+        <div
+          className={`timeline-card timeline-card--${entry.type}${
+            entry.highlight ? " timeline-card--highlight" : ""
+          }`}
+          style={{ "--arrow-color": entry.iconColor }}
+        >
+          <span className="timeline-date">{entry.date}</span>
+          {entry.title && <h3 className="timeline-title">{entry.title}</h3>}
+          {entry.subtitle && (
+            <h4 className="timeline-subtitle">{entry.subtitle}</h4>
+          )}
+          {entry.description && (
+            <p className="timeline-description">{entry.description}</p>
+          )}
+        </div>
+      )}
+    </div>
   );
+});
+
+const ExperienceSection = () => {
+  const containerRef = useRef(null);
+  const iconRefs = useRef([]);
+  const [segments, setSegments] = useState([]);
+
+  const measure = useCallback(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    const containerTop = container.getBoundingClientRect().top;
+    const centers = iconRefs.current.map((el) => {
+      if (!el) return null;
+      const rect = el.getBoundingClientRect();
+      return rect.top - containerTop + rect.height / 2;
+    });
+
+    const nextSegments = [];
+    for (let i = 0; i < centers.length - 1; i += 1) {
+      if (timelineData[i].hideLineAfter) continue; // skip this connector
+      if (centers[i] == null || centers[i + 1] == null) continue;
+      nextSegments.push({ top: centers[i], height: centers[i + 1] - centers[i] });
+    }
+    setSegments(nextSegments);
+  }, []);
+
+  useLayoutEffect(() => {
+    measure();
+    const ro = new ResizeObserver(measure);
+    if (containerRef.current) ro.observe(containerRef.current);
+    window.addEventListener("resize", measure);
+    return () => {
+      ro.disconnect();
+      window.removeEventListener("resize", measure);
+    };
+  }, [measure]);
+
+  return (
+  <div className="custom-timeline" ref={containerRef}>
+    <div className="timeline-top-stub" />
+    {segments.map((seg, i) => (
+      <div
+        key={i}
+        className="timeline-line-segment"
+        style={{ top: seg.top, height: seg.height }}
+      />
+    ))}
+    {timelineData.map((entry, index) => (
+      <TimelineNode
+        key={entry.id}
+        entry={entry}
+        side={index % 2 === 0 ? "left" : "right"}
+        ref={(el) => (iconRefs.current[index] = el)}
+      />
+    ))}
+  </div>
+);
 };
 
 export default ExperienceSection;

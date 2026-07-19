@@ -1,16 +1,202 @@
-.vertical-timeline {
-    padding-top: 14rem;
+.custom-timeline {
+  --card-width: 420px;
+  --timeline-gap: 3rem;
+  --timeline-top-padding: 4rem; 
+  --top-stub-height: 4rem;        
+
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: var(--timeline-top-padding) 0 0;
 }
-.vertical-timeline-element--work.vertical-timeline-element:first-child > .vertical-timeline-element-content {
-    background: rgb(9, 6, 31);
-    color: #bbb;
+
+.timeline-top-stub {
+  position: absolute;
+  top: max(0px, calc(var(--timeline-top-padding) - var(--top-stub-height)));
+  height: min(var(--top-stub-height), var(--timeline-top-padding));
+  left: 50%;
+  width: 4px;
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(-50%);
+  z-index: 0;
 }
-.vertical-timeline-element--work.vertical-timeline-element > .vertical-timeline-element-content {
-    color: #333;
+
+.timeline-line-segment {
+  position: absolute;
+  left: 50%;
+  width: 4px;
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(-50%);
+  z-index: 0;
 }
-.vertical-timeline-element--education.vertical-timeline-element > .vertical-timeline-element-content {
-    color: #555;
+
+.timeline-node {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  width: 50%;
+  min-height: 120px; /* enforces a consistent minimum row height, even for short marker cards */
+  margin-bottom: var(--timeline-gap); /* guaranteed minimum vertical gap between items */
 }
-.vertical-timeline-element-date {
-    color: #bbb;
+
+.timeline-node:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-node--left {
+  left: 0;
+  padding-right: 3rem;
+  justify-content: flex-end;
+}
+
+.timeline-node--right {
+  left: 50%;
+  padding-left: 3rem;
+  justify-content: flex-start;
+}
+
+.timeline-icon {
+  position: absolute;
+  top: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.2rem;
+  box-shadow: 0 0 0 4px rgba(9, 6, 31, 1), 0 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.timeline-node--left .timeline-icon {
+  right: -22px;
+}
+
+.timeline-node--right .timeline-icon {
+  left: -22px;
+}
+
+.timeline-card {
+  position: relative;
+  width: var(--card-width);
+  box-sizing: border-box;
+  background: #fff;
+  color: #333;
+  border-radius: 8px;
+  padding: 1.2rem 1.5rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-card--education {
+  color: #555;
+}
+
+.timeline-card--highlight {
+  background: rgb(9, 6, 31);
+  color: #bbb;
+}
+
+.timeline-card--marker {
+  background: transparent;
+  border: 1.5px dashed rgba(255, 255, 255, 0.3);
+  color: #999;
+  box-shadow: none;
+}
+
+.timeline-card::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  border: 8px solid transparent;
+}
+
+.timeline-node--left .timeline-card::before {
+  right: -16px;
+  border-left-color: var(--arrow-color);
+}
+
+.timeline-node--right .timeline-card::before {
+  left: -16px;
+  border-right-color: var(--arrow-color);
+}
+
+.timeline-card--marker::before {
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+}
+
+.timeline-date {
+  display: block;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  margin-bottom: 0.4rem;
+}
+
+.timeline-title {
+  font-size: 1.1rem;
+  margin: 0 0 0.25rem;
+}
+
+.timeline-card--marker .timeline-title {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.timeline-subtitle {
+  font-size: 0.95rem;
+  font-weight: 500;
+  opacity: 0.85;
+  margin: 0 0 0.5rem;
+}
+
+.timeline-description {
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.timeline-text-marker {
+  position: relative;
+  top: 10px;
+  font-size: 0.9rem;
+  color: #999;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .custom-timeline {
+    --card-width: 100%;
+    padding: var(--timeline-top-padding) 1rem 0;
+  }
+
+  .timeline-line-segment {
+    left: 22px;
+  }
+
+  .timeline-node,
+  .timeline-node--left,
+  .timeline-node--right {
+    width: 100%;
+    left: 0;
+    justify-content: flex-start;
+    padding-left: 3.5rem;
+    padding-right: 0;
+  }
+
+  .timeline-node--left .timeline-icon,
+  .timeline-node--right .timeline-icon {
+    left: 0;
+    right: auto;
+  }
+
+  .timeline-card::before,
+  .timeline-node--left .timeline-card::before,
+  .timeline-node--right .timeline-card::before {
+    left: -16px;
+    right: auto;
+    border-right-color: var(--arrow-color);
+    border-left-color: transparent;
+  }
 }
